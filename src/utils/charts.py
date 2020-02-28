@@ -1,5 +1,7 @@
-import pandas as pd
 import re
+import math
+import pandas as pd
+import matplotlib.pyplot as plt
 from src.trends.population_trends import generate_acs_employment_data
 
 
@@ -88,3 +90,140 @@ def view_economic_dynamism(detailed_data, plt_list):
     ]
 
     return economic_dynamism_plt.loc[plt_list,].plot.bar(figsize=(10, 7))
+
+
+def view_inventory_by_msa(input_data, ncol=2):
+    """
+    Shows relationship between new listing, inventory, and sales on one axis.
+    Median sale price over time is indexed on the secondary axis.
+
+    Args:
+        input_data (pd.DataFrame): detailed dataframe of Redfin data
+        ncol (int): Number of columns to generate in the plot
+    Returns:
+        None (plt shows up in sysout)
+    """
+
+    # Setup data for generating plots. We want to have one subplot per MSA, two columns,
+    # and a flexible # of rows (based on the # of MSAs to enter). We will loop through
+    # MSAs using a counter.
+    msa_list = list(input_data.region.unique())
+    nrow = math.ceil(len(msa_list) / ncol)
+    count = 0
+
+    # Initialize the subplots
+    fig, axes = plt.subplots(nrow, ncol)
+
+    for r in range(nrow):
+        for c in range(ncol):
+            # try:
+            plotting_df = input_data.loc[
+                input_data.region == msa_list[count],
+                [
+                    "month_of_period_end",
+                    "region",
+                    "new_listings",
+                    "inventory",
+                    "sales",
+                    "indexed_sale_price",
+                ],
+            ].set_index("month_of_period_end")
+
+            plotting_df[["new_listings", "inventory", "sales"]].plot(
+                title=msa_list[count], ax=axes[r, c], figsize=(14, 600)
+            )
+            plotting_df["indexed_sale_price"].plot(secondary_y=True, ax=axes[r, c])
+            count += 1
+            # except:
+            #    count += 1
+            #    continue
+
+    return None
+
+
+def view_price_growth_across_msas(input_data, msas_per_subplot=5):
+    """
+    Shows comparisons of indexed sale prices across MSAs.
+
+    Args:
+        input_data (pd.DataFrame): detailed dataframe of Redfin data
+        msas_per_subplot (int): Number of MSAs to compare per subplot
+    Returns:
+        None (plt shows up in sysout)
+    """
+
+    # Setup data for generating plots. We want to have 5 MSAs per subplot, 2 columns,
+    # and a flexible # of rows (based on the # of MSAs to enter). We will loop through
+    # MSAs using a counter.
+    # TODO: Make more flexible - can combine with next function and input list for MSAs.
+    plotting_df = input_data.pivot(
+        index="month_of_period_end", columns="region", values="indexed_sale_price"
+    )
+    col_list = list(plotting_df.columns)
+
+    ncol = 2
+    nrow = math.ceil((len(col_list) / msas_per_subplot) / ncol)
+    count = 0
+
+    # Initialize the subplots
+    fig, axes = plt.subplots(nrow, ncol)
+
+    for r in range(nrow):
+        for c in range(ncol):
+            try:
+                plotting_df[
+                    col_list[count * msas_per_subplot : (count + 1) * msas_per_subplot]
+                ].plot(ax=axes[r, c], figsize=(14, 100))
+                count += 1
+            except TypeError:
+                count += 1
+                print(
+                    f"These MSAs have no numeric data to plot: {list(col_list[count * msas_per_subplot: (count + 1) * msas_per_subplot])}."
+                )
+                continue
+
+    return None
+
+
+def view_moi_by_msa(input_data):
+    """
+    Shows relationship between DOM, MOI, and sale price, over time.
+
+    Args:
+        input_data (pd.DataFrame): detailed dataframe of Redfin data
+    Returns:
+        None (plt shows up in sysout)
+    """
+
+    # Setup data for generating plots. We want to have 5 MSAs per subplot, 2 columns,
+    # and a flexible # of rows (based on the # of MSAs to enter). We will loop through
+    # MSAs using a counter.
+    # TODO: Make more flexible - can combine with prior function and input list for MSAs.
+    msa_list = list(input_data.region.unique())
+    ncol = 2
+    nrow = math.ceil(len(msa_list) / ncol)
+    count = 0
+
+    # Initialize the subplots
+    fig, axes = plt.subplots(nrow, ncol)
+
+    for r in range(nrow):
+        for c in range(ncol):
+            plotting_df = input_data.loc[
+                input_data.region == msa_list[count],
+                [
+                    "month_of_period_end",
+                    "region",
+                    "days_on_market",
+                    "indexed_sale_price",
+                    "rolling_moi",
+                ],
+            ].set_index("month_of_period_end")
+
+            plotting_df[["days_on_market", "indexed_sale_price"]].plot(
+                title=msa_list[count], ax=axes[r, c], figsize=(14, 600)
+            )
+            plotting_df["rolling_moi"].plot(secondary_y=True, ax=axes[r, c])
+            count += 1
+
+    return None
