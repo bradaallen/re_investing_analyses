@@ -25,9 +25,7 @@ def generate_acs_employment_data(industry_dict, survey_year):
     """
 
     # Components of the API endpoint from the Census
-    endpoint = (
-        f"https://api.census.gov/data/{survey_year}/acs/acs5?get=NAME,group(C24050)&"
-    )
+    endpoint = f"https://api.census.gov/data/{str(survey_year)}/acs/acs5?get=NAME,group(C24050)&"
     geography = (
         f"for=metropolitan%20statistical%20area/micropolitan%20statistical%20area:*"
     )
