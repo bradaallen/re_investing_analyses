@@ -1,5 +1,11 @@
 import pandas as pd
 import re
+import pickle
+import os.path
+import googleapiclient.discovery
+import google_auth_oauthlib.flow
+import google.auth.transport.requests
+from src.constants import SPREADSHEET_ID, RANGE_NAME, SCOPES
 
 
 def cagr(input_data, end, begin, timing="year", operation="column", prepend=""):
@@ -55,3 +61,47 @@ def pct2float(x):
     """
     x = str(x)
     return float(x.strip("%")) / 100
+
+
+def import_spreadsheet_data(TOKEN, CREDENTIALS):
+    """
+    Imports spreadsheet data for analysis and consumption. Requires credentials for Google API
+    (stored in credentials.json with the file, SPREADSHEET_ID, RANGE_NAME, and SCOPE
+    (found in constants.py). Once imported, results are converted from a dictionary to a dataframe.
+    Args:
+        TOKEN: pickle file provided by Google
+        CREDENTIALS: provided by Google; stored as a .json
+    Returns:
+        values_df (pd.DataFrame)
+    """
+    creds = None
+    # The file token.pickle stores the user's access and refresh tokens, and is
+    # created automatically when the authorization flow completes for the first
+    # time.
+    if os.path.exists(TOKEN):
+        with open(TOKEN, "rb") as token:
+            creds = pickle.load(token)
+    # If there are no (valid) credentials available, let the user log in.
+    if not creds or not creds.valid:
+        if creds and creds.expired and creds.refresh_token:
+            creds.refresh(google.auth.transport.requests.Request())
+        else:
+            flow = google_auth_oauthlib.flow.InstalledAppFlow.from_client_secrets_file(
+                CREDENTIALS, SCOPES
+            )
+            creds = flow.run_local_server(port=0)
+        # Save the credentials for the next run
+        with open(TOKEN, "wb") as token:
+            pickle.dump(creds, token)
+
+    service = googleapiclient.discovery.build("sheets", "v4", credentials=creds)
+
+    # Call the Sheets API
+    sheet = service.spreadsheets()
+    result = (
+        sheet.values().get(spreadsheetId=SPREADSHEET_ID, range=RANGE_NAME).execute()
+    )
+    values = result.get("values", [])
+    values_df = pd.DataFrame(data=values[1:], columns=values[0])
+
+    return values_df
