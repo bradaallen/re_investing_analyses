@@ -227,3 +227,47 @@ def view_moi_by_msa(input_data):
             count += 1
 
     return None
+
+
+def view_price_to_rent_by_msa(processed_ptr_data, ncol=2):
+    """
+    Shows relationship between indexed prices, indexed rents, and PTR ratio over time.
+
+    Args:
+        processed_ptr_data (pd.DataFrame): detailed dataframe of Zillow PTR data
+        ncol (int, default=2): Number of columns for output view
+    Returns:
+        None (plt shows up in sysout)
+    """
+
+    # Setup data for generating plots. We want to have 1 MSAs per subplot, 2 columns,
+    # and a flexible # of rows (based on the # of MSAs to enter). We will loop through
+    # MSAs using a counter.
+    tmp_ptr_df = processed_ptr_data.set_index("dates")
+
+    region_list = list(tmp_ptr_df["RegionName"].unique())
+    nrow = math.ceil((len(region_list)) / ncol)
+    count = 0
+
+    for r in range(nrow):
+
+        fig, axes = plt.subplots(1, ncol)
+
+        for c in range(ncol):
+            try:
+                tmp_ptr_df.loc[
+                    tmp_ptr_df.RegionName == region_list[count],
+                    ["indexed_prices", "indexed_rents"],
+                ].plot(title=region_list[count], ax=axes[c], figsize=(14, 5))
+                tmp_ptr_df.loc[
+                    tmp_ptr_df.RegionName == region_list[count], "ratio"
+                ].plot(secondary_y=True, ax=axes[c])
+                count += 1
+            except IndexError:
+                count += 1
+                continue
+
+        # TODO: A bit of a hack - processing time is long and allows for viewing intermediate output.
+        plt.show()
+
+    return None
