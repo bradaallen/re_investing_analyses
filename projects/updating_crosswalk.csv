@@ -1,0 +1,955 @@
+,NAME_2018,REDFIN_DATA,APARTMENT_LIST_DATA,cbsatitle,cbsa_state
+10100,"Aberdeen, SD Micro Area",,,"Aberdeen, SD",4610100
+10140,"Aberdeen, WA Micro Area",,,"Aberdeen, WA",5310140
+10180,"Abilene, TX Metro Area","Abilene, TX metro area","Abilene, TX","Abilene, TX",4810180
+10220,"Ada, OK Micro Area",,,"Ada, OK",4010220
+10260,"Adjuntas, PR Micro Area",,,"Adjuntas, PR",7210260
+10300,"Adrian, MI Micro Area",,,"Adrian, MI",2610300
+10380,"Aguadilla-Isabela, PR Metro Area",,,"Aguadilla-Isabela, PR",7210380
+10420,"Akron, OH Metro Area","Akron, OH metro area","Akron, OH","Akron, OH",3910420
+10460,"Alamogordo, NM Micro Area",,,"Alamogordo, NM",3510460
+10500,"Albany, GA Metro Area",,,"Albany, GA",1310500
+10540,"Albany, OR Metro Area","Albany, OR metro area",,"Albany, OR",4110540
+10580,"Albany-Schenectady-Troy, NY Metro Area","Albany, NY metro area","Albany-Schenectady-Troy, NY","Albany-Schenectady-Troy, NY",3610580
+10620,"Albemarle, NC Micro Area",,,"Albemarle, NC",3710620
+10660,"Albert Lea, MN Micro Area",,,"Albert Lea, MN",2710660
+10700,"Albertville, AL Micro Area",,,"Albertville, AL",0110700
+10740,"Albuquerque, NM Metro Area",,"Albuquerque, NM","Albuquerque, NM",3510740
+10760,"Alexander City, AL Micro Area",,,,
+10780,"Alexandria, LA Metro Area",,,"Alexandria, LA",2210780
+10820,"Alexandria, MN Micro Area",,,"Alexandria, MN",2710820
+10860,"Alice, TX Micro Area",,,"Alice, TX",4810860
+10900,"Allentown-Bethlehem-Easton, PA-NJ Metro Area","Allentown, PA metro area","Allentown-Bethlehem-Easton, PA-NJ","Allentown-Bethlehem-Easton, PA-NJ",3410900
+10940,"Alma, MI Micro Area",,,"Alma, MI",2610940
+10980,"Alpena, MI Micro Area",,,"Alpena, MI",2610980
+11020,"Altoona, PA Metro Area",,,"Altoona, PA",4211020
+11060,"Altus, OK Micro Area",,,"Altus, OK",4011060
+11100,"Amarillo, TX Metro Area",,"Amarillo, TX","Amarillo, TX",4811100
+11140,"Americus, GA Micro Area",,,"Americus, GA",1311140
+11180,"Ames, IA Metro Area",,,"Ames, IA",1911180
+11220,"Amsterdam, NY Micro Area",,,"Amsterdam, NY",3611220
+11260,"Anchorage, AK Metro Area",,"Anchorage, AK","Anchorage, AK",0211260
+11380,"Andrews, TX Micro Area",,,"Andrews, TX",4811380
+11420,"Angola, IN Micro Area",,,"Angola, IN",1811420
+11460,"Ann Arbor, MI Metro Area","Ann Arbor, MI metro area","Ann Arbor, MI","Ann Arbor, MI",2611460
+11500,"Anniston-Oxford-Jacksonville, AL Metro Area","Anniston, AL metro area",,"Anniston-Oxford-Jacksonville, AL",0111500
+11540,"Appleton, WI Metro Area","Appleton, WI metro area","Appleton, WI","Appleton, WI",5511540
+11580,"Arcadia, FL Micro Area",,,"Arcadia, FL",1211580
+11620,"Ardmore, OK Micro Area",,,"Ardmore, OK",4011620
+11640,"Arecibo, PR Metro Area",,,"Arecibo, PR",7211640
+11660,"Arkadelphia, AR Micro Area",,,"Arkadelphia, AR",0511660
+11680,"Arkansas City-Winfield, KS Micro Area",,,"Arkansas City-Winfield, KS",2011680
+11700,"Asheville, NC Metro Area","Asheville, NC metro area","Asheville, NC","Asheville, NC",3711700
+11740,"Ashland, OH Micro Area",,,"Ashland, OH",3911740
+11780,"Ashtabula, OH Micro Area",,,"Ashtabula, OH",3911780
+11820,"Astoria, OR Micro Area",,,"Astoria, OR",4111820
+11860,"Atchison, KS Micro Area",,,"Atchison, KS",2011860
+11900,"Athens, OH Micro Area",,,"Athens, OH",3911900
+11940,"Athens, TN Micro Area",,,"Athens, TN",4711940
+11980,"Athens, TX Micro Area",,,"Athens, TX",4811980
+12020,"Athens-Clarke County, GA Metro Area",,"Athens-Clarke County, GA","Athens-Clarke County, GA",1312020
+12060,"Atlanta-Sandy Springs-Roswell, GA Metro Area","Atlanta, GA metro area","Atlanta-Sandy Springs-Roswell, GA","Atlanta-Sandy Springs-Roswell, GA",1312060
+12100,"Atlantic City-Hammonton, NJ Metro Area","Atlantic City, NJ metro area","Atlantic City-Hammonton, NJ","Atlantic City-Hammonton, NJ",3412100
+12120,"Atmore, AL Micro Area",,,,
+12140,"Auburn, IN Micro Area",,,"Auburn, IN",1812140
+12180,"Auburn, NY Micro Area",,,"Auburn, NY",3612180
+12220,"Auburn-Opelika, AL Metro Area",,,"Auburn-Opelika, AL",0112220
+12260,"Augusta-Richmond County, GA-SC Metro Area",,"Augusta-Richmond County, GA-SC","Augusta-Richmond County, GA-SC",1312260
+12300,"Augusta-Waterville, ME Micro Area",,,"Augusta-Waterville, ME",2312300
+12380,"Austin, MN Micro Area",,,"Austin, MN",2712380
+12420,"Austin-Round Rock, TX Metro Area","Austin, TX metro area","Austin-Round Rock, TX","Austin-Round Rock, TX",4812420
+12460,"Bainbridge, GA Micro Area",,,"Bainbridge, GA",1312460
+12540,"Bakersfield, CA Metro Area","Bakersfield, CA metro area","Bakersfield, CA","Bakersfield, CA",0612540
+12580,"Baltimore-Columbia-Towson, MD Metro Area","Baltimore, MD metro area","Baltimore-Columbia-Towson, MD","Baltimore-Columbia-Towson, MD",2412580
+12620,"Bangor, ME Metro Area","Bangor, ME metro area",,"Bangor, ME",2312620
+12660,"Baraboo, WI Micro Area",,,"Baraboo, WI",5512660
+12680,"Bardstown, KY Micro Area",,,"Bardstown, KY",2112680
+12700,"Barnstable Town, MA Metro Area","Barnstable Town, MA metro area","Barnstable Town, MA","Barnstable Town, MA",2512700
+12740,"Barre, VT Micro Area",,,"Barre, VT",5012740
+12780,"Bartlesville, OK Micro Area",,,"Bartlesville, OK",4012780
+12820,"Bastrop, LA Micro Area",,,"Bastrop, LA",2212820
+12860,"Batavia, NY Micro Area",,,"Batavia, NY",3612860
+12900,"Batesville, AR Micro Area",,,"Batesville, AR",0512900
+12940,"Baton Rouge, LA Metro Area","Baton Rouge, LA metro area","Baton Rouge, LA","Baton Rouge, LA",2212940
+12980,"Battle Creek, MI Metro Area","Battle Creek, MI metro area",,"Battle Creek, MI",2612980
+13020,"Bay City, MI Metro Area",,,"Bay City, MI",2613020
+13060,"Bay City, TX Micro Area",,,"Bay City, TX",4813060
+13100,"Beatrice, NE Micro Area",,,"Beatrice, NE",3113100
+13140,"Beaumont-Port Arthur, TX Metro Area",,"Beaumont-Port Arthur, TX","Beaumont-Port Arthur, TX",4813140
+13180,"Beaver Dam, WI Micro Area",,,"Beaver Dam, WI",5513180
+13220,"Beckley, WV Metro Area",,,"Beckley, WV",5413220
+13260,"Bedford, IN Micro Area",,,"Bedford, IN",1813260
+13300,"Beeville, TX Micro Area",,,"Beeville, TX",4813300
+13340,"Bellefontaine, OH Micro Area",,,"Bellefontaine, OH",3913340
+13380,"Bellingham, WA Metro Area","Bellingham, WA metro area","Bellingham, WA","Bellingham, WA",5313380
+13420,"Bemidji, MN Micro Area",,,"Bemidji, MN",2713420
+13460,"Bend-Redmond, OR Metro Area","Bend, OR metro area","Bend-Redmond, OR","Bend-Redmond, OR",4113460
+13500,"Bennettsville, SC Micro Area",,,"Bennettsville, SC",4513500
+13540,"Bennington, VT Micro Area",,,"Bennington, VT",5013540
+13620,"Berlin, NH-VT Micro Area",,,"Berlin, NH-VT",3313620
+13660,"Big Rapids, MI Micro Area",,,"Big Rapids, MI",2613660
+13700,"Big Spring, TX Micro Area",,,"Big Spring, TX",4813700
+13720,"Big Stone Gap, VA Micro Area",,,"Big Stone Gap, VA",5113720
+13740,"Billings, MT Metro Area",,,"Billings, MT",3013740
+13780,"Binghamton, NY Metro Area",,"Binghamton, NY","Binghamton, NY",3613780
+13820,"Birmingham-Hoover, AL Metro Area","Birmingham, AL metro area","Birmingham-Hoover, AL","Birmingham-Hoover, AL",0113820
+13900,"Bismarck, ND Metro Area",,,"Bismarck, ND",3813900
+13940,"Blackfoot, ID Micro Area",,,"Blackfoot, ID",1613940
+13980,"Blacksburg-Christiansburg-Radford, VA Metro Area",,"Blacksburg-Christiansburg-Radford, VA","Blacksburg-Christiansburg-Radford, VA",5113980
+14010,"Bloomington, IL Metro Area",,"Bloomington, IL","Bloomington, IL",1714010
+14020,"Bloomington, IN Metro Area",,,"Bloomington, IN",1814020
+14100,"Bloomsburg-Berwick, PA Metro Area",,,"Bloomsburg-Berwick, PA",4214100
+14140,"Bluefield, WV-VA Micro Area",,,"Bluefield, WV-VA",5114140
+14180,"Blytheville, AR Micro Area",,,"Blytheville, AR",0514180
+14220,"Bogalusa, LA Micro Area",,,"Bogalusa, LA",2214220
+14260,"Boise City, ID Metro Area",,"Boise City, ID","Boise City, ID",1614260
+14300,"Bonham, TX Micro Area",,,,
+14340,"Boone, IA Micro Area",,,"Boone, IA",1914340
+14380,"Boone, NC Micro Area",,,"Boone, NC",3714380
+14420,"Borger, TX Micro Area",,,"Borger, TX",4814420
+14460,"Boston-Cambridge-Newton, MA-NH Metro Area","Boston, MA metro area","Boston-Cambridge-Newton, MA-NH","Boston-Cambridge-Newton, MA-NH",2514460
+14500,"Boulder, CO Metro Area","Boulder, CO metro area","Boulder, CO","Boulder, CO",0814500
+14540,"Bowling Green, KY Metro Area",,,"Bowling Green, KY",2114540
+14580,"Bozeman, MT Micro Area",,,"Bozeman, MT",3014580
+14620,"Bradford, PA Micro Area",,,"Bradford, PA",4214620
+14660,"Brainerd, MN Micro Area",,,"Brainerd, MN",2714660
+14700,"Branson, MO Micro Area",,,"Branson, MO",2914700
+14720,"Breckenridge, CO Micro Area",,,"Breckenridge, CO",0814720
+14740,"Bremerton-Silverdale, WA Metro Area","Bremerton, WA metro area","Bremerton-Silverdale, WA","Bremerton-Silverdale, WA",5314740
+14780,"Brenham, TX Micro Area",,,"Brenham, TX",4814780
+14820,"Brevard, NC Micro Area",,,"Brevard, NC",3714820
+14860,"Bridgeport-Stamford-Norwalk, CT Metro Area","Bridgeport, CT metro area","Bridgeport-Stamford-Norwalk, CT","Bridgeport-Stamford-Norwalk, CT",0914860
+15020,"Brookhaven, MS Micro Area",,,"Brookhaven, MS",2815020
+15060,"Brookings, OR Micro Area",,,"Brookings, OR",4115060
+15100,"Brookings, SD Micro Area",,,"Brookings, SD",4615100
+15140,"Brownsville, TN Micro Area",,,,
+15180,"Brownsville-Harlingen, TX Metro Area",,"Brownsville-Harlingen, TX","Brownsville-Harlingen, TX",4815180
+15220,"Brownwood, TX Micro Area",,,"Brownwood, TX",4815220
+15260,"Brunswick, GA Metro Area",,,"Brunswick, GA",1315260
+15340,"Bucyrus, OH Micro Area",,,"Bucyrus, OH",3915340
+15380,"Buffalo-Cheektowaga-Niagara Falls, NY Metro Area","Buffalo, NY metro area","Buffalo-Cheektowaga-Niagara Falls, NY","Buffalo-Cheektowaga-Niagara Falls, NY",3615380
+15420,"Burley, ID Micro Area",,,"Burley, ID",1615420
+15460,"Burlington, IA-IL Micro Area",,,"Burlington, IA-IL",1715460
+15500,"Burlington, NC Metro Area",,,"Burlington, NC",3715500
+15540,"Burlington-South Burlington, VT Metro Area","Burlington, VT metro area","Burlington-South Burlington, VT","Burlington-South Burlington, VT",5015540
+15580,"Butte-Silver Bow, MT Micro Area",,,"Butte-Silver Bow, MT",3015580
+15620,"Cadillac, MI Micro Area",,,"Cadillac, MI",2615620
+15660,"Calhoun, GA Micro Area",,,"Calhoun, GA",1315660
+15680,"California-Lexington Park, MD Metro Area","California, MD metro area",,"California-Lexington Park, MD",2415680
+15700,"Cambridge, MD Micro Area",,,"Cambridge, MD",2415700
+15740,"Cambridge, OH Micro Area",,,"Cambridge, OH",3915740
+15780,"Camden, AR Micro Area",,,"Camden, AR",0515780
+15820,"Campbellsville, KY Micro Area",,,"Campbellsville, KY",2115820
+15860,"Ca�on City, CO Micro Area",,,"Cañon City, CO",0815860
+15900,"Canton, IL Micro Area",,,"Canton, IL",1715900
+15940,"Canton-Massillon, OH Metro Area","Canton, OH metro area","Canton-Massillon, OH","Canton-Massillon, OH",3915940
+15980,"Cape Coral-Fort Myers, FL Metro Area","Cape Coral, FL metro area","Cape Coral-Fort Myers, FL","Cape Coral-Fort Myers, FL",1215980
+16020,"Cape Girardeau, MO-IL Metro Area","Cape Girardeau, MO metro area",,"Cape Girardeau, MO-IL",1716020
+16060,"Carbondale-Marion, IL Metro Area",,,"Carbondale-Marion, IL",1716060
+16100,"Carlsbad-Artesia, NM Micro Area",,,"Carlsbad-Artesia, NM",3516100
+16140,"Carroll, IA Micro Area",,,,
+16180,"Carson City, NV Metro Area","Carson City, NV metro area",,"Carson City, NV",3216180
+16220,"Casper, WY Metro Area",,,"Casper, WY",5616220
+16260,"Cedar City, UT Micro Area",,,"Cedar City, UT",4916260
+16300,"Cedar Rapids, IA Metro Area",,"Cedar Rapids, IA","Cedar Rapids, IA",1916300
+16340,"Cedartown, GA Micro Area",,,"Cedartown, GA",1316340
+16380,"Celina, OH Micro Area",,,"Celina, OH",3916380
+16420,"Central City, KY Micro Area",,,,
+16460,"Centralia, IL Micro Area",,,"Centralia, IL",1716460
+16500,"Centralia, WA Micro Area",,,"Centralia, WA",5316500
+16540,"Chambersburg-Waynesboro, PA Metro Area","Chambersburg, PA metro area",,"Chambersburg-Waynesboro, PA",4216540
+16580,"Champaign-Urbana, IL Metro Area","Champaign, IL metro area","Champaign-Urbana, IL","Champaign-Urbana, IL",1716580
+16620,"Charleston, WV Metro Area",,"Charleston, WV","Charleston, WV",5416620
+16660,"Charleston-Mattoon, IL Micro Area",,,"Charleston-Mattoon, IL",1716660
+16700,"Charleston-North Charleston, SC Metro Area","Charleston, SC metro area","Charleston-North Charleston, SC","Charleston-North Charleston, SC",4516700
+16740,"Charlotte-Concord-Gastonia, NC-SC Metro Area","Charlotte, NC metro area","Charlotte-Concord-Gastonia, NC-SC","Charlotte-Concord-Gastonia, NC-SC",3716740
+16820,"Charlottesville, VA Metro Area",,"Charlottesville, VA","Charlottesville, VA",5116820
+16860,"Chattanooga, TN-GA Metro Area",,"Chattanooga, TN-GA","Chattanooga, TN-GA",1316860
+16940,"Cheyenne, WY Metro Area",,,"Cheyenne, WY",5616940
+16980,"Chicago-Naperville-Elgin, IL-IN-WI Metro Area","Chicago, IL metro area","Chicago-Naperville-Elgin, IL-IN-WI","Chicago-Naperville-Elgin, IL-IN-WI",1716980
+17020,"Chico, CA Metro Area","Chico, CA metro area","Chico, CA","Chico, CA",0617020
+17060,"Chillicothe, OH Micro Area",,,"Chillicothe, OH",3917060
+17140,"Cincinnati, OH-KY-IN Metro Area","Cincinnati, OH metro area","Cincinnati, OH-KY-IN","Cincinnati, OH-KY-IN",1817140
+17200,"Claremont-Lebanon, NH-VT Micro Area",,"Claremont-Lebanon, NH-VT","Claremont-Lebanon, NH-VT",3317200
+17220,"Clarksburg, WV Micro Area",,,"Clarksburg, WV",5417220
+17260,"Clarksdale, MS Micro Area",,,"Clarksdale, MS",2817260
+17300,"Clarksville, TN-KY Metro Area","Clarksville, TN metro area","Clarksville, TN-KY","Clarksville, TN-KY",2117300
+17340,"Clearlake, CA Micro Area",,,"Clearlake, CA",0617340
+17380,"Cleveland, MS Micro Area",,,"Cleveland, MS",2817380
+17420,"Cleveland, TN Metro Area",,,"Cleveland, TN",4717420
+17460,"Cleveland-Elyria, OH Metro Area","Cleveland, OH metro area","Cleveland-Elyria, OH","Cleveland-Elyria, OH",3917460
+17500,"Clewiston, FL Micro Area",,,"Clewiston, FL",1217500
+17540,"Clinton, IA Micro Area",,,"Clinton, IA",1917540
+17580,"Clovis, NM Micro Area",,,"Clovis, NM",3517580
+17620,"Coamo, PR Micro Area",,,"Coamo, PR",7217620
+17640,"Coco, PR Micro Area",,,"Coco, PR",7217640
+17660,"Coeur d'Alene, ID Metro Area","Coeur d'Alene, ID metro area",,"Coeur d'Alene, ID",1617660
+17700,"Coffeyville, KS Micro Area",,,"Coffeyville, KS",2017700
+17740,"Coldwater, MI Micro Area",,,"Coldwater, MI",2617740
+17780,"College Station-Bryan, TX Metro Area",,"College Station-Bryan, TX","College Station-Bryan, TX",4817780
+17820,"Colorado Springs, CO Metro Area","Colorado Springs, CO metro area","Colorado Springs, CO","Colorado Springs, CO",0817820
+17860,"Columbia, MO Metro Area",,"Columbia, MO","Columbia, MO",2917860
+17900,"Columbia, SC Metro Area",,"Columbia, SC","Columbia, SC",4517900
+17980,"Columbus, GA-AL Metro Area",,"Columbus, GA-AL","Columbus, GA-AL",0117980
+18020,"Columbus, IN Metro Area","Columbus, IN metro area",,"Columbus, IN",1818020
+18060,"Columbus, MS Micro Area",,,"Columbus, MS",2818060
+18100,"Columbus, NE Micro Area",,,"Columbus, NE",3118100
+18140,"Columbus, OH Metro Area","Columbus, OH metro area","Columbus, OH","Columbus, OH",3918140
+18180,"Concord, NH Micro Area",,,"Concord, NH",3318180
+18220,"Connersville, IN Micro Area",,,"Connersville, IN",1818220
+18260,"Cookeville, TN Micro Area",,,"Cookeville, TN",4718260
+18300,"Coos Bay, OR Micro Area",,,"Coos Bay, OR",4118300
+18380,"Cordele, GA Micro Area",,,"Cordele, GA",1318380
+18420,"Corinth, MS Micro Area",,,"Corinth, MS",2818420
+18460,"Cornelia, GA Micro Area",,,"Cornelia, GA",1318460
+18500,"Corning, NY Micro Area",,,"Corning, NY",3618500
+18580,"Corpus Christi, TX Metro Area",,"Corpus Christi, TX","Corpus Christi, TX",4818580
+18620,"Corsicana, TX Micro Area",,,"Corsicana, TX",4818620
+18660,"Cortland, NY Micro Area",,,"Cortland, NY",3618660
+18700,"Corvallis, OR Metro Area","Corvallis, OR metro area",,"Corvallis, OR",4118700
+18740,"Coshocton, OH Micro Area",,,"Coshocton, OH",3918740
+18780,"Craig, CO Micro Area",,,"Craig, CO",0818780
+18820,"Crawfordsville, IN Micro Area",,,"Crawfordsville, IN",1818820
+18860,"Crescent City, CA Micro Area",,,"Crescent City, CA",0618860
+18880,"Crestview-Fort Walton Beach-Destin, FL Metro Area","Crestview, FL metro area","Crestview-Fort Walton Beach-Destin, FL","Crestview-Fort Walton Beach-Destin, FL",1218880
+18900,"Crossville, TN Micro Area",,,"Crossville, TN",4718900
+18980,"Cullman, AL Micro Area",,,"Cullman, AL",0118980
+19000,"Cullowhee, NC Micro Area",,,"Cullowhee, NC",3719000
+19060,"Cumberland, MD-WV Metro Area","Cumberland, MD metro area",,"Cumberland, MD-WV",2419060
+19100,"Dallas-Fort Worth-Arlington, TX Metro Area","Dallas, TX metro area","Dallas-Fort Worth-Arlington, TX","Dallas-Fort Worth-Arlington, TX",4819100
+19140,"Dalton, GA Metro Area",,,"Dalton, GA",1319140
+19180,"Danville, IL Metro Area",,,"Danville, IL",1719180
+19220,"Danville, KY Micro Area",,,"Danville, KY",2119220
+19260,"Danville, VA Micro Area",,,"Danville, VA",5119260
+19300,"Daphne-Fairhope-Foley, AL Metro Area",,"Daphne-Fairhope-Foley, AL","Daphne-Fairhope-Foley, AL",0119300
+19340,"Davenport-Moline-Rock Island, IA-IL Metro Area",,"Davenport-Moline-Rock Island, IA-IL","Davenport-Moline-Rock Island, IA-IL",1719340
+19380,"Dayton, OH Metro Area","Dayton, OH metro area","Dayton, OH","Dayton, OH",3919380
+19420,"Dayton, TN Micro Area",,,"Dayton, TN",4719420
+19460,"Decatur, AL Metro Area","Decatur, AL metro area",,"Decatur, AL",0119460
+19500,"Decatur, IL Metro Area",,,"Decatur, IL",1719500
+19540,"Decatur, IN Micro Area",,,"Decatur, IN",1819540
+19580,"Defiance, OH Micro Area",,,"Defiance, OH",3919580
+19620,"Del Rio, TX Micro Area",,,"Del Rio, TX",4819620
+19660,"Deltona-Daytona Beach-Ormond Beach, FL Metro Area","Deltona, FL metro area","Deltona-Daytona Beach-Ormond Beach, FL","Deltona-Daytona Beach-Ormond Beach, FL",1219660
+19700,"Deming, NM Micro Area",,,"Deming, NM",3519700
+19740,"Denver-Aurora-Lakewood, CO Metro Area","Denver, CO metro area","Denver-Aurora-Lakewood, CO","Denver-Aurora-Lakewood, CO",0819740
+19760,"DeRidder, LA Micro Area",,,"DeRidder, LA",2219760
+19780,"Des Moines-West Des Moines, IA Metro Area","Des Moines, IA metro area","Des Moines-West Des Moines, IA","Des Moines-West Des Moines, IA",1919780
+19820,"Detroit-Warren-Dearborn, MI Metro Area","Detroit, MI metro area","Detroit-Warren-Dearborn, MI","Detroit-Warren-Dearborn, MI",2619820
+19860,"Dickinson, ND Micro Area",,,"Dickinson, ND",3819860
+19940,"Dixon, IL Micro Area",,,"Dixon, IL",1719940
+19980,"Dodge City, KS Micro Area",,,"Dodge City, KS",2019980
+20020,"Dothan, AL Metro Area",,,"Dothan, AL",0120020
+20060,"Douglas, GA Micro Area",,,"Douglas, GA",1320060
+20100,"Dover, DE Metro Area","Dover, DE metro area","Dover, DE","Dover, DE",1020100
+20140,"Dublin, GA Micro Area",,,"Dublin, GA",1320140
+20180,"DuBois, PA Micro Area",,,"DuBois, PA",4220180
+20220,"Dubuque, IA Metro Area",,,"Dubuque, IA",1920220
+20260,"Duluth, MN-WI Metro Area",,"Duluth, MN-WI","Duluth, MN-WI",2720260
+20300,"Dumas, TX Micro Area",,,"Dumas, TX",4820300
+20340,"Duncan, OK Micro Area",,,"Duncan, OK",4020340
+20380,"Dunn, NC Micro Area",,,"Dunn, NC",3720380
+20420,"Durango, CO Micro Area",,,"Durango, CO",0820420
+20460,"Durant, OK Micro Area",,,"Durant, OK",4020460
+20500,"Durham-Chapel Hill, NC Metro Area","Durham, NC metro area","Durham-Chapel Hill, NC","Durham-Chapel Hill, NC",3720500
+20540,"Dyersburg, TN Micro Area",,,"Dyersburg, TN",4720540
+20580,"Eagle Pass, TX Micro Area",,,"Eagle Pass, TX",4820580
+20660,"Easton, MD Micro Area",,,"Easton, MD",2420660
+20700,"East Stroudsburg, PA Metro Area",,"East Stroudsburg, PA","East Stroudsburg, PA",4220700
+20740,"Eau Claire, WI Metro Area","Eau Claire, WI metro area",,"Eau Claire, WI",5520740
+20780,"Edwards, CO Micro Area",,,"Edwards, CO",0820780
+20820,"Effingham, IL Micro Area",,,"Effingham, IL",1720820
+20900,"El Campo, TX Micro Area",,,"El Campo, TX",4820900
+20940,"El Centro, CA Metro Area",,"El Centro, CA","El Centro, CA",0620940
+20980,"El Dorado, AR Micro Area",,,"El Dorado, AR",0520980
+21020,"Elizabeth City, NC Micro Area",,,"Elizabeth City, NC",3721020
+21060,"Elizabethtown-Fort Knox, KY Metro Area",,,"Elizabethtown-Fort Knox, KY",2121060
+21120,"Elk City, OK Micro Area",,,"Elk City, OK",4021120
+21140,"Elkhart-Goshen, IN Metro Area",,"Elkhart-Goshen, IN","Elkhart-Goshen, IN",1821140
+21180,"Elkins, WV Micro Area",,,"Elkins, WV",5421180
+21220,"Elko, NV Micro Area",,,"Elko, NV",3221220
+21260,"Ellensburg, WA Micro Area",,,"Ellensburg, WA",5321260
+21300,"Elmira, NY Metro Area",,,"Elmira, NY",3621300
+21340,"El Paso, TX Metro Area","El Paso, TX metro area","El Paso, TX","El Paso, TX",4821340
+21380,"Emporia, KS Micro Area",,,"Emporia, KS",2021380
+21420,"Enid, OK Metro Area",,,"Enid, OK",4021420
+21460,"Enterprise, AL Micro Area",,,"Enterprise, AL",0121460
+21500,"Erie, PA Metro Area",,"Erie, PA","Erie, PA",4221500
+21540,"Escanaba, MI Micro Area",,,"Escanaba, MI",2621540
+21580,"Espa�ola, NM Micro Area",,,"Española, NM",3521580
+21640,"Eufaula, AL-GA Micro Area",,,,
+21660,"Eugene, OR Metro Area","Eugene, OR metro area","Eugene, OR","Eugene, OR",4121660
+21700,"Eureka-Arcata-Fortuna, CA Micro Area",,,"Eureka-Arcata-Fortuna, CA",0621700
+21740,"Evanston, WY Micro Area",,,"Evanston, WY",5621740
+21780,"Evansville, IN-KY Metro Area",,"Evansville, IN-KY","Evansville, IN-KY",1821780
+21820,"Fairbanks, AK Metro Area",,,"Fairbanks, AK",0221820
+21840,"Fairfield, IA Micro Area",,,"Fairfield, IA",1921840
+21860,"Fairmont, MN Micro Area",,,,
+21900,"Fairmont, WV Micro Area",,,"Fairmont, WV",5421900
+21980,"Fallon, NV Micro Area",,,"Fallon, NV",3221980
+22020,"Fargo, ND-MN Metro Area",,"Fargo, ND-MN","Fargo, ND-MN",2722020
+22060,"Faribault-Northfield, MN Micro Area",,,"Faribault-Northfield, MN",2722060
+22100,"Farmington, MO Micro Area",,,"Farmington, MO",2922100
+22140,"Farmington, NM Metro Area",,,"Farmington, NM",3522140
+22180,"Fayetteville, NC Metro Area",,"Fayetteville, NC","Fayetteville, NC",3722180
+22220,"Fayetteville-Springdale-Rogers, AR-MO Metro Area",,"Fayetteville-Springdale-Rogers, AR-MO","Fayetteville-Springdale-Rogers, AR-MO",0522220
+22260,"Fergus Falls, MN Micro Area",,,"Fergus Falls, MN",2722260
+22280,"Fernley, NV Micro Area",,,"Fernley, NV",3222280
+22300,"Findlay, OH Micro Area",,,"Findlay, OH",3922300
+22340,"Fitzgerald, GA Micro Area",,,"Fitzgerald, GA",1322340
+22380,"Flagstaff, AZ Metro Area","Flagstaff, AZ metro area",,"Flagstaff, AZ",0422380
+22420,"Flint, MI Metro Area","Flint, MI metro area","Flint, MI","Flint, MI",2622420
+22500,"Florence, SC Metro Area",,"Florence, SC","Florence, SC",4522500
+22520,"Florence-Muscle Shoals, AL Metro Area",,,"Florence-Muscle Shoals, AL",0122520
+22540,"Fond du Lac, WI Metro Area","Fond du Lac, WI metro area",,"Fond du Lac, WI",5522540
+22580,"Forest City, NC Micro Area",,,"Forest City, NC",3722580
+22620,"Forrest City, AR Micro Area",,,"Forrest City, AR",0522620
+22660,"Fort Collins, CO Metro Area","Fort Collins, CO metro area","Fort Collins, CO","Fort Collins, CO",0822660
+22700,"Fort Dodge, IA Micro Area",,,"Fort Dodge, IA",1922700
+22780,"Fort Leonard Wood, MO Micro Area",,,"Fort Leonard Wood, MO",2922780
+22800,"Fort Madison-Keokuk, IA-IL-MO Micro Area",,,"Fort Madison-Keokuk, IA-IL-MO",1722800
+22820,"Fort Morgan, CO Micro Area",,,"Fort Morgan, CO",0822820
+22840,"Fort Payne, AL Micro Area",,,,
+22860,"Fort Polk South, LA Micro Area",,,"Fort Polk South, LA",2222860
+22900,"Fort Smith, AR-OK Metro Area",,"Fort Smith, AR-OK","Fort Smith, AR-OK",0522900
+23060,"Fort Wayne, IN Metro Area",,"Fort Wayne, IN","Fort Wayne, IN",1823060
+23140,"Frankfort, IN Micro Area",,,"Frankfort, IN",1823140
+23180,"Frankfort, KY Micro Area",,,"Frankfort, KY",2123180
+23240,"Fredericksburg, TX Micro Area",,,"Fredericksburg, TX",4823240
+23300,"Freeport, IL Micro Area",,,"Freeport, IL",1723300
+23340,"Fremont, NE Micro Area",,,"Fremont, NE",3123340
+23380,"Fremont, OH Micro Area",,,"Fremont, OH",3923380
+23420,"Fresno, CA Metro Area","Fresno, CA metro area","Fresno, CA","Fresno, CA",0623420
+23460,"Gadsden, AL Metro Area","Gadsden, AL metro area",,"Gadsden, AL",0123460
+23500,"Gaffney, SC Micro Area",,,"Gaffney, SC",4523500
+23540,"Gainesville, FL Metro Area",,"Gainesville, FL","Gainesville, FL",1223540
+23580,"Gainesville, GA Metro Area","Gainesville, GA metro area","Gainesville, GA","Gainesville, GA",1323580
+23620,"Gainesville, TX Micro Area",,,"Gainesville, TX",4823620
+23660,"Galesburg, IL Micro Area",,,"Galesburg, IL",1723660
+23700,"Gallup, NM Micro Area",,,"Gallup, NM",3523700
+23780,"Garden City, KS Micro Area",,,"Garden City, KS",2023780
+23820,"Gardnerville Ranchos, NV Micro Area",,,"Gardnerville Ranchos, NV",3223820
+23860,"Georgetown, SC Micro Area",,,"Georgetown, SC",4523860
+23900,"Gettysburg, PA Metro Area","Gettysburg, PA metro area",,"Gettysburg, PA",4223900
+23940,"Gillette, WY Micro Area",,,"Gillette, WY",5623940
+23980,"Glasgow, KY Micro Area",,,"Glasgow, KY",2123980
+24020,"Glens Falls, NY Metro Area","Glens Falls, NY metro area",,"Glens Falls, NY",3624020
+24060,"Glenwood Springs, CO Micro Area",,,"Glenwood Springs, CO",0824060
+24100,"Gloversville, NY Micro Area",,,"Gloversville, NY",3624100
+24140,"Goldsboro, NC Metro Area",,,"Goldsboro, NC",3724140
+24220,"Grand Forks, ND-MN Metro Area",,,"Grand Forks, ND-MN",2724220
+24260,"Grand Island, NE Metro Area",,,"Grand Island, NE",3124260
+24300,"Grand Junction, CO Metro Area",,,"Grand Junction, CO",0824300
+24330,"Grand Rapids, MN Micro Area",,,,
+24340,"Grand Rapids-Wyoming, MI Metro Area","Grand Rapids, MI metro area","Grand Rapids-Wyoming, MI","Grand Rapids-Wyoming, MI",2624340
+24380,"Grants, NM Micro Area",,,"Grants, NM",3524380
+24420,"Grants Pass, OR Metro Area",,,"Grants Pass, OR",4124420
+24460,"Great Bend, KS Micro Area",,,"Great Bend, KS",2024460
+24500,"Great Falls, MT Metro Area",,,"Great Falls, MT",3024500
+24540,"Greeley, CO Metro Area","Greeley, CO metro area","Greeley, CO","Greeley, CO",0824540
+24580,"Green Bay, WI Metro Area","Green Bay, WI metro area","Green Bay, WI","Green Bay, WI",5524580
+24620,"Greeneville, TN Micro Area",,,"Greeneville, TN",4724620
+24640,"Greenfield Town, MA Micro Area",,,"Greenfield Town, MA",2524640
+24660,"Greensboro-High Point, NC Metro Area","Greensboro, NC metro area","Greensboro-High Point, NC","Greensboro-High Point, NC",3724660
+24700,"Greensburg, IN Micro Area",,,"Greensburg, IN",1824700
+24740,"Greenville, MS Micro Area",,,"Greenville, MS",2824740
+24780,"Greenville, NC Metro Area",,"Greenville, NC","Greenville, NC",3724780
+24820,"Greenville, OH Micro Area",,,"Greenville, OH",3924820
+24860,"Greenville-Anderson-Mauldin, SC Metro Area",,"Greenville-Anderson-Mauldin, SC","Greenville-Anderson-Mauldin, SC",4524860
+24900,"Greenwood, MS Micro Area",,,"Greenwood, MS",2824900
+24940,"Greenwood, SC Micro Area","Greenville, SC metro area",,"Greenwood, SC",4524940
+24980,"Grenada, MS Micro Area",,,"Grenada, MS",2824980
+25020,"Guayama, PR Metro Area",,,"Guayama, PR",7225020
+25060,"Gulfport-Biloxi-Pascagoula, MS Metro Area",,"Gulfport-Biloxi-Pascagoula, MS","Gulfport-Biloxi-Pascagoula, MS",2825060
+25100,"Guymon, OK Micro Area",,,"Guymon, OK",4025100
+25180,"Hagerstown-Martinsburg, MD-WV Metro Area","Hagerstown, MD metro area","Hagerstown-Martinsburg, MD-WV","Hagerstown-Martinsburg, MD-WV",2425180
+25200,"Hailey, ID Micro Area",,,"Hailey, ID",1625200
+25220,"Hammond, LA Metro Area","Hammond, LA metro area",,"Hammond, LA",2225220
+25260,"Hanford-Corcoran, CA Metro Area",,,"Hanford-Corcoran, CA",0625260
+25300,"Hannibal, MO Micro Area",,,"Hannibal, MO",2925300
+25420,"Harrisburg-Carlisle, PA Metro Area","Harrisburg, PA metro area","Harrisburg-Carlisle, PA","Harrisburg-Carlisle, PA",4225420
+25460,"Harrison, AR Micro Area",,,"Harrison, AR",0525460
+25500,"Harrisonburg, VA Metro Area",,,"Harrisonburg, VA",5125500
+25540,"Hartford-West Hartford-East Hartford, CT Metro Area","Hartford, CT metro area","Hartford-West Hartford-East Hartford, CT","Hartford-West Hartford-East Hartford, CT",0925540
+25580,"Hastings, NE Micro Area",,,"Hastings, NE",3125580
+25620,"Hattiesburg, MS Metro Area",,,"Hattiesburg, MS",2825620
+25700,"Hays, KS Micro Area",,,"Hays, KS",2025700
+25720,"Heber, UT Micro Area",,,"Heber, UT",4925720
+25740,"Helena, MT Micro Area",,,"Helena, MT",3025740
+25760,"Helena-West Helena, AR Micro Area",,,"Helena-West Helena, AR",0525760
+25780,"Henderson, NC Micro Area",,,"Henderson, NC",3725780
+25820,"Hereford, TX Micro Area",,,"Hereford, TX",4825820
+25840,"Hermiston-Pendleton, OR Micro Area",,,"Hermiston-Pendleton, OR",4125840
+25860,"Hickory-Lenoir-Morganton, NC Metro Area","Hickory, NC metro area","Hickory-Lenoir-Morganton, NC","Hickory-Lenoir-Morganton, NC",3725860
+25880,"Hillsdale, MI Micro Area",,,"Hillsdale, MI",2625880
+25900,"Hilo, HI Micro Area",,"Hilo, HI","Hilo, HI",1525900
+25940,"Hilton Head Island-Bluffton-Beaufort, SC Metro Area",,"Hilton Head Island-Bluffton-Beaufort, SC","Hilton Head Island-Bluffton-Beaufort, SC",4525940
+25980,"Hinesville, GA Metro Area",,,"Hinesville, GA",1325980
+26020,"Hobbs, NM Micro Area",,,"Hobbs, NM",3526020
+26090,"Holland, MI Micro Area",,,"Holland, MI",2626090
+26140,"Homosassa Springs, FL Metro Area",,,"Homosassa Springs, FL",1226140
+26220,"Hood River, OR Micro Area",,,"Hood River, OR",4126220
+26260,"Hope, AR Micro Area",,,,
+26300,"Hot Springs, AR Metro Area","Hot Springs, AR metro area",,"Hot Springs, AR",0526300
+26340,"Houghton, MI Micro Area",,,"Houghton, MI",2626340
+26380,"Houma-Thibodaux, LA Metro Area",,"Houma-Thibodaux, LA","Houma-Thibodaux, LA",2226380
+26420,"Houston-The Woodlands-Sugar Land, TX Metro Area","Houston, TX metro area","Houston-The Woodlands-Sugar Land, TX","Houston-The Woodlands-Sugar Land, TX",4826420
+26460,"Hudson, NY Micro Area",,,"Hudson, NY",3626460
+26500,"Huntingdon, PA Micro Area",,,"Huntingdon, PA",4226500
+26540,"Huntington, IN Micro Area",,,"Huntington, IN",1826540
+26580,"Huntington-Ashland, WV-KY-OH Metro Area","Huntington, WV metro area","Huntington-Ashland, WV-KY-OH","Huntington-Ashland, WV-KY-OH",2126580
+26620,"Huntsville, AL Metro Area","Huntsville, AL metro area","Huntsville, AL","Huntsville, AL",0126620
+26660,"Huntsville, TX Micro Area",,,"Huntsville, TX",4826660
+26700,"Huron, SD Micro Area",,,"Huron, SD",4626700
+26740,"Hutchinson, KS Micro Area",,,"Hutchinson, KS",2026740
+26780,"Hutchinson, MN Micro Area",,,"Hutchinson, MN",2726780
+26820,"Idaho Falls, ID Metro Area",,,"Idaho Falls, ID",1626820
+26860,"Indiana, PA Micro Area",,,"Indiana, PA",4226860
+26900,"Indianapolis-Carmel-Anderson, IN Metro Area","Indianapolis, IN metro area","Indianapolis-Carmel-Anderson, IN","Indianapolis-Carmel-Anderson, IN",1826900
+26940,"Indianola, MS Micro Area",,,"Indianola, MS",2826940
+26960,"Ionia, MI Micro Area",,,"Ionia, MI",2626960
+26980,"Iowa City, IA Metro Area",,,"Iowa City, IA",1926980
+27020,"Iron Mountain, MI-WI Micro Area",,,"Iron Mountain, MI-WI",2627020
+27060,"Ithaca, NY Metro Area",,,"Ithaca, NY",3627060
+27100,"Jackson, MI Metro Area","Jackson, MI metro area",,"Jackson, MI",2627100
+27140,"Jackson, MS Metro Area",,"Jackson, MS","Jackson, MS",2827140
+27160,"Jackson, OH Micro Area",,,"Jackson, OH",3927160
+27180,"Jackson, TN Metro Area",,,"Jackson, TN",4727180
+27220,"Jackson, WY-ID Micro Area",,,"Jackson, WY-ID",1627220
+27260,"Jacksonville, FL Metro Area","Jacksonville, FL metro area","Jacksonville, FL","Jacksonville, FL",1227260
+27300,"Jacksonville, IL Micro Area",,,"Jacksonville, IL",1727300
+27340,"Jacksonville, NC Metro Area",,"Jacksonville, NC","Jacksonville, NC",3727340
+27380,"Jacksonville, TX Micro Area",,,"Jacksonville, TX",4827380
+27420,"Jamestown, ND Micro Area",,,"Jamestown, ND",3827420
+27460,"Jamestown-Dunkirk-Fredonia, NY Micro Area",,,"Jamestown-Dunkirk-Fredonia, NY",3627460
+27500,"Janesville-Beloit, WI Metro Area","Janesville, WI metro area",,"Janesville-Beloit, WI",5527500
+27540,"Jasper, IN Micro Area",,,"Jasper, IN",1827540
+27580,"Jayuya, PR Micro Area",,,"Jayuya, PR",7227580
+27600,"Jefferson, GA Micro Area",,,"Jefferson, GA",1327600
+27620,"Jefferson City, MO Metro Area",,,"Jefferson City, MO",2927620
+27660,"Jennings, LA Micro Area",,,,
+27700,"Jesup, GA Micro Area",,,"Jesup, GA",1327700
+27740,"Johnson City, TN Metro Area",,"Johnson City, TN","Johnson City, TN",4727740
+27780,"Johnstown, PA Metro Area",,,"Johnstown, PA",4227780
+27860,"Jonesboro, AR Metro Area",,,"Jonesboro, AR",0527860
+27900,"Joplin, MO Metro Area",,"Joplin, MO","Joplin, MO",2927900
+27920,"Junction City, KS Micro Area",,,"Junction City, KS",2027920
+27940,"Juneau, AK Micro Area",,,"Juneau, AK",0227940
+27980,"Kahului-Wailuku-Lahaina, HI Metro Area","Kahului, HI metro area",,"Kahului-Wailuku-Lahaina, HI",1527980
+28020,"Kalamazoo-Portage, MI Metro Area","Kalamazoo, MI metro area","Kalamazoo-Portage, MI","Kalamazoo-Portage, MI",2628020
+28060,"Kalispell, MT Micro Area",,,"Kalispell, MT",3028060
+28100,"Kankakee, IL Metro Area","Kankakee, IL metro area",,"Kankakee, IL",1728100
+28140,"Kansas City, MO-KS Metro Area","Kansas City, MO metro area","Kansas City, MO-KS","Kansas City, MO-KS",2028140
+28180,"Kapaa, HI Micro Area",,,"Kapaa, HI",1528180
+28260,"Kearney, NE Micro Area",,,"Kearney, NE",3128260
+28300,"Keene, NH Micro Area",,,"Keene, NH",3328300
+28340,"Kendallville, IN Micro Area",,,"Kendallville, IN",1828340
+28380,"Kennett, MO Micro Area",,,"Kennett, MO",2928380
+28420,"Kennewick-Richland, WA Metro Area",,"Kennewick-Richland, WA","Kennewick-Richland, WA",5328420
+28500,"Kerrville, TX Micro Area",,,"Kerrville, TX",4828500
+28540,"Ketchikan, AK Micro Area",,,"Ketchikan, AK",0228540
+28580,"Key West, FL Micro Area",,,"Key West, FL",1228580
+28620,"Kill Devil Hills, NC Micro Area",,,"Kill Devil Hills, NC",3728620
+28660,"Killeen-Temple, TX Metro Area","Killeen, TX metro area","Killeen-Temple, TX","Killeen-Temple, TX",4828660
+28700,"Kingsport-Bristol-Bristol, TN-VA Metro Area","Knoxville, TN metro area","Kingsport-Bristol-Bristol, TN-VA","Kingsport-Bristol-Bristol, TN-VA",4728700
+28740,"Kingston, NY Metro Area",,"Kingston, NY","Kingston, NY",3628740
+28780,"Kingsville, TX Micro Area",,,"Kingsville, TX",4828780
+28820,"Kinston, NC Micro Area",,,"Kinston, NC",3728820
+28860,"Kirksville, MO Micro Area",,,"Kirksville, MO",2928860
+28900,"Klamath Falls, OR Micro Area",,,"Klamath Falls, OR",4128900
+28940,"Knoxville, TN Metro Area",,"Knoxville, TN","Knoxville, TN",4728940
+29020,"Kokomo, IN Metro Area",,,"Kokomo, IN",1829020
+29060,"Laconia, NH Micro Area",,,"Laconia, NH",3329060
+29100,"La Crosse-Onalaska, WI-MN Metro Area","La Crosse, WI metro area",,"La Crosse-Onalaska, WI-MN",2729100
+29180,"Lafayette, LA Metro Area",,"Lafayette, LA","Lafayette, LA",2229180
+29200,"Lafayette-West Lafayette, IN Metro Area",,"Lafayette-West Lafayette, IN","Lafayette-West Lafayette, IN",1829200
+29260,"La Grande, OR Micro Area",,,"La Grande, OR",4129260
+29300,"LaGrange, GA Micro Area",,,"LaGrange, GA",1329300
+29340,"Lake Charles, LA Metro Area",,"Lake Charles, LA","Lake Charles, LA",2229340
+29380,"Lake City, FL Micro Area",,,"Lake City, FL",1229380
+29420,"Lake Havasu City-Kingman, AZ Metro Area",,"Lake Havasu City-Kingman, AZ","Lake Havasu City-Kingman, AZ",0429420
+29460,"Lakeland-Winter Haven, FL Metro Area","Lakeland, FL metro area","Lakeland-Winter Haven, FL","Lakeland-Winter Haven, FL",1229460
+29500,"Lamesa, TX Micro Area",,,"Lamesa, TX",4829500
+29540,"Lancaster, PA Metro Area","Lancaster, PA metro area","Lancaster, PA","Lancaster, PA",4229540
+29620,"Lansing-East Lansing, MI Metro Area",,"Lansing-East Lansing, MI","Lansing-East Lansing, MI",2629620
+29660,"Laramie, WY Micro Area",,,"Laramie, WY",5629660
+29700,"Laredo, TX Metro Area",,"Laredo, TX","Laredo, TX",4829700
+29740,"Las Cruces, NM Metro Area",,"Las Cruces, NM","Las Cruces, NM",3529740
+29780,"Las Vegas, NM Micro Area",,,"Las Vegas, NM",3529780
+29820,"Las Vegas-Henderson-Paradise, NV Metro Area","Las Vegas, NV metro area","Las Vegas-Henderson-Paradise, NV","Las Vegas-Henderson-Paradise, NV",3229820
+29860,"Laurel, MS Micro Area",,,"Laurel, MS",2829860
+29900,"Laurinburg, NC Micro Area",,,"Laurinburg, NC",3729900
+29940,"Lawrence, KS Metro Area",,,"Lawrence, KS",2029940
+29980,"Lawrenceburg, TN Micro Area",,,"Lawrenceburg, TN",4729980
+30020,"Lawton, OK Metro Area",,,"Lawton, OK",4030020
+30060,"Lebanon, MO Micro Area",,,"Lebanon, MO",2930060
+30140,"Lebanon, PA Metro Area","Lebanon, PA metro area",,"Lebanon, PA",4230140
+30220,"Levelland, TX Micro Area",,,"Levelland, TX",4830220
+30260,"Lewisburg, PA Micro Area",,,"Lewisburg, PA",4230260
+30280,"Lewisburg, TN Micro Area",,,"Lewisburg, TN",4730280
+30300,"Lewiston, ID-WA Metro Area",,,"Lewiston, ID-WA",1630300
+30340,"Lewiston-Auburn, ME Metro Area","Lewiston, ME metro area",,"Lewiston-Auburn, ME",2330340
+30380,"Lewistown, PA Micro Area",,,"Lewistown, PA",4230380
+30420,"Lexington, NE Micro Area",,,"Lexington, NE",3130420
+30460,"Lexington-Fayette, KY Metro Area","Lexington, KY metro area","Lexington-Fayette, KY","Lexington-Fayette, KY",2130460
+30580,"Liberal, KS Micro Area",,,"Liberal, KS",2030580
+30620,"Lima, OH Metro Area",,,"Lima, OH",3930620
+30660,"Lincoln, IL Micro Area",,,"Lincoln, IL",1730660
+30700,"Lincoln, NE Metro Area","Lincoln, NE metro area","Lincoln, NE","Lincoln, NE",3130700
+30780,"Little Rock-North Little Rock-Conway, AR Metro Area","Little Rock, AR metro area","Little Rock-North Little Rock-Conway, AR","Little Rock-North Little Rock-Conway, AR",0530780
+30820,"Lock Haven, PA Micro Area",,,"Lock Haven, PA",4230820
+30860,"Logan, UT-ID Metro Area","Logan, UT metro area",,"Logan, UT-ID",1630860
+30880,"Logan, WV Micro Area",,,"Logan, WV",5430880
+30900,"Logansport, IN Micro Area",,,"Logansport, IN",1830900
+30940,"London, KY Micro Area",,,"London, KY",2130940
+30980,"Longview, TX Metro Area",,"Longview, TX","Longview, TX",4830980
+31020,"Longview, WA Metro Area","Longview, WA metro area",,"Longview, WA",5331020
+31060,"Los Alamos, NM Micro Area",,,"Los Alamos, NM",3531060
+31080,"Los Angeles-Long Beach-Anaheim, CA Metro Area","Los Angeles, CA metro area","Los Angeles-Long Beach-Anaheim, CA","Los Angeles-Long Beach-Anaheim, CA",0631080
+31140,"Louisville/Jefferson County, KY-IN Metro Area","Louisville, KY metro area","Louisville/Jefferson County, KY-IN","Louisville/Jefferson County, KY-IN",1831140
+31180,"Lubbock, TX Metro Area",,"Lubbock, TX","Lubbock, TX",4831180
+31220,"Ludington, MI Micro Area",,,"Ludington, MI",2631220
+31260,"Lufkin, TX Micro Area",,,"Lufkin, TX",4831260
+31300,"Lumberton, NC Micro Area",,,"Lumberton, NC",3731300
+31340,"Lynchburg, VA Metro Area",,"Lynchburg, VA","Lynchburg, VA",5131340
+31380,"Macomb, IL Micro Area",,,"Macomb, IL",1731380
+31420,"Macon-Bibb County, GA Metro Area",,"Macon, GA","Macon, GA",1331420
+31460,"Madera, CA Metro Area","Madera, CA metro area",,"Madera, CA",0631460
+31500,"Madison, IN Micro Area",,,"Madison, IN",1831500
+31540,"Madison, WI Metro Area","Madison, WI metro area","Madison, WI","Madison, WI",5531540
+31580,"Madisonville, KY Micro Area",,,"Madisonville, KY",2131580
+31620,"Magnolia, AR Micro Area",,,"Magnolia, AR",0531620
+31660,"Malone, NY Micro Area",,,"Malone, NY",3631660
+31680,"Malvern, AR Micro Area",,,"Malvern, AR",0531680
+31700,"Manchester-Nashua, NH Metro Area","Manchester, NH metro area","Manchester-Nashua, NH","Manchester-Nashua, NH",3331700
+31740,"Manhattan, KS Metro Area",,,"Manhattan, KS",2031740
+31820,"Manitowoc, WI Micro Area",,,"Manitowoc, WI",5531820
+31860,"Mankato-North Mankato, MN Metro Area",,,"Mankato-North Mankato, MN",2731860
+31900,"Mansfield, OH Metro Area",,,"Mansfield, OH",3931900
+31930,"Marietta, OH Micro Area",,,"Marietta, OH",3931930
+31940,"Marinette, WI-MI Micro Area",,,"Marinette, WI-MI",2631940
+31980,"Marion, IN Micro Area",,,"Marion, IN",1831980
+32000,"Marion, NC Micro Area",,,"Marion, NC",3732000
+32020,"Marion, OH Micro Area",,,"Marion, OH",3932020
+32100,"Marquette, MI Micro Area",,,"Marquette, MI",2632100
+32140,"Marshall, MN Micro Area",,,"Marshall, MN",2732140
+32180,"Marshall, MO Micro Area",,,"Marshall, MO",2932180
+32220,"Marshall, TX Micro Area",,,"Marshall, TX",4832220
+32260,"Marshalltown, IA Micro Area",,,"Marshalltown, IA",1932260
+32280,"Martin, TN Micro Area",,,"Martin, TN",4732280
+32300,"Martinsville, VA Micro Area",,,"Martinsville, VA",5132300
+32340,"Maryville, MO Micro Area",,,"Maryville, MO",2932340
+32380,"Mason City, IA Micro Area",,,"Mason City, IA",1932380
+32420,"Mayag�ez, PR Metro Area",,,"Mayagüez, PR",7232420
+32460,"Mayfield, KY Micro Area",,,"Mayfield, KY",2132460
+32500,"Maysville, KY Micro Area",,,"Maysville, KY",2132500
+32540,"McAlester, OK Micro Area",,,"McAlester, OK",4032540
+32580,"McAllen-Edinburg-Mission, TX Metro Area","McAllen, TX metro area","McAllen-Edinburg-Mission, TX","McAllen-Edinburg-Mission, TX",4832580
+32620,"McComb, MS Micro Area",,,"McComb, MS",2832620
+32660,"McMinnville, TN Micro Area",,,"McMinnville, TN",4732660
+32700,"McPherson, KS Micro Area",,,"McPherson, KS",2032700
+32740,"Meadville, PA Micro Area",,,"Meadville, PA",4232740
+32780,"Medford, OR Metro Area",,"Medford, OR","Medford, OR",4132780
+32820,"Memphis, TN-MS-AR Metro Area","Memphis, TN metro area","Memphis, TN-MS-AR","Memphis, TN-MS-AR",0532820
+32860,"Menomonie, WI Micro Area",,,"Menomonie, WI",5532860
+32900,"Merced, CA Metro Area","Merced, CA metro area","Merced, CA","Merced, CA",0632900
+32940,"Meridian, MS Micro Area",,,"Meridian, MS",2832940
+32980,"Merrill, WI Micro Area",,,"Merrill, WI",5532980
+33020,"Mexico, MO Micro Area",,,"Mexico, MO",2933020
+33060,"Miami, OK Micro Area",,,"Miami, OK",4033060
+33100,"Miami-Fort Lauderdale-West Palm Beach, FL Metro Area","Miami, FL metro area","Miami-Fort Lauderdale-West Palm Beach, FL","Miami-Fort Lauderdale-West Palm Beach, FL",1233100
+33140,"Michigan City-La Porte, IN Metro Area",,,"Michigan City-La Porte, IN",1833140
+33180,"Middlesborough, KY Micro Area",,,"Middlesborough, KY",2133180
+33220,"Midland, MI Metro Area",,,"Midland, MI",2633220
+33260,"Midland, TX Metro Area",,,"Midland, TX",4833260
+33300,"Milledgeville, GA Micro Area",,,"Milledgeville, GA",1333300
+33340,"Milwaukee-Waukesha-West Allis, WI Metro Area","Milwaukee, WI metro area","Milwaukee-Waukesha-West Allis, WI","Milwaukee-Waukesha-West Allis, WI",5533340
+33420,"Mineral Wells, TX Micro Area",,,"Mineral Wells, TX",4833420
+33460,"Minneapolis-St. Paul-Bloomington, MN-WI Metro Area","Minneapolis, MN metro area","Minneapolis-St. Paul-Bloomington, MN-WI","Minneapolis-St. Paul-Bloomington, MN-WI",2733460
+33500,"Minot, ND Micro Area",,,"Minot, ND",3833500
+33540,"Missoula, MT Metro Area",,,"Missoula, MT",3033540
+33580,"Mitchell, SD Micro Area",,,"Mitchell, SD",4633580
+33620,"Moberly, MO Micro Area",,,"Moberly, MO",2933620
+33660,"Mobile, AL Metro Area",,"Mobile, AL","Mobile, AL",0133660
+33700,"Modesto, CA Metro Area","Modesto, CA metro area","Modesto, CA","Modesto, CA",0633700
+33740,"Monroe, LA Metro Area",,"Monroe, LA","Monroe, LA",2233740
+33780,"Monroe, MI Metro Area","Monroe, MI metro area",,"Monroe, MI",2633780
+33860,"Montgomery, AL Metro Area",,"Montgomery, AL","Montgomery, AL",0133860
+33940,"Montrose, CO Micro Area",,,"Montrose, CO",0833940
+33980,"Morehead City, NC Micro Area",,,"Morehead City, NC",3733980
+34020,"Morgan City, LA Micro Area",,,"Morgan City, LA",2234020
+34060,"Morgantown, WV Metro Area",,,"Morgantown, WV",5434060
+34100,"Morristown, TN Metro Area",,,"Morristown, TN",4734100
+34140,"Moscow, ID Micro Area",,,"Moscow, ID",1634140
+34180,"Moses Lake, WA Micro Area",,,"Moses Lake, WA",5334180
+34220,"Moultrie, GA Micro Area",,,"Moultrie, GA",1334220
+34260,"Mountain Home, AR Micro Area",,,"Mountain Home, AR",0534260
+34300,"Mountain Home, ID Micro Area",,,"Mountain Home, ID",1634300
+34340,"Mount Airy, NC Micro Area",,,"Mount Airy, NC",3734340
+34380,"Mount Pleasant, MI Micro Area",,,"Mount Pleasant, MI",2634380
+34420,"Mount Pleasant, TX Micro Area",,,"Mount Pleasant, TX",4834420
+34460,"Mount Sterling, KY Micro Area",,,"Mount Sterling, KY",2134460
+34500,"Mount Vernon, IL Micro Area",,,"Mount Vernon, IL",1734500
+34540,"Mount Vernon, OH Micro Area",,,"Mount Vernon, OH",3934540
+34580,"Mount Vernon-Anacortes, WA Metro Area","Mount Vernon, WA metro area",,"Mount Vernon-Anacortes, WA",5334580
+34620,"Muncie, IN Metro Area",,,"Muncie, IN",1834620
+34660,"Murray, KY Micro Area",,,"Murray, KY",2134660
+34700,"Muscatine, IA Micro Area",,,"Muscatine, IA",1934700
+34740,"Muskegon, MI Metro Area","Muskegon, MI metro area","Muskegon, MI","Muskegon, MI",2634740
+34780,"Muskogee, OK Micro Area",,,"Muskogee, OK",4034780
+34820,"Myrtle Beach-Conway-North Myrtle Beach, SC-NC Metro Area","Myrtle Beach, SC metro area","Myrtle Beach-Conway-North Myrtle Beach, SC-NC","Myrtle Beach-Conway-North Myrtle Beach, SC-NC",3734820
+34860,"Nacogdoches, TX Micro Area",,,"Nacogdoches, TX",4834860
+34900,"Napa, CA Metro Area","Napa, CA metro area",,"Napa, CA",0634900
+34940,"Naples-Immokalee-Marco Island, FL Metro Area","Naples, FL metro area","Naples-Immokalee-Marco Island, FL","Naples-Immokalee-Marco Island, FL",1234940
+34980,"Nashville-Davidson--Murfreesboro--Franklin, TN Metro Area","Nashville, TN metro area","Nashville-Davidson--Murfreesboro--Franklin, TN","Nashville-Davidson--Murfreesboro--Franklin, TN",4734980
+35020,"Natchez, MS-LA Micro Area",,,"Natchez, MS-LA",2235020
+35060,"Natchitoches, LA Micro Area",,,"Natchitoches, LA",2235060
+35100,"New Bern, NC Metro Area",,,"New Bern, NC",3735100
+35140,"Newberry, SC Micro Area",,,"Newberry, SC",4535140
+35220,"New Castle, IN Micro Area",,,"New Castle, IN",1835220
+35260,"New Castle, PA Micro Area",,,"New Castle, PA",4235260
+35300,"New Haven-Milford, CT Metro Area","New Haven, CT metro area","New Haven-Milford, CT","New Haven-Milford, CT",0935300
+35380,"New Orleans-Metairie, LA Metro Area","New Orleans, LA metro area","New Orleans-Metairie, LA","New Orleans-Metairie, LA",2235380
+35420,"New Philadelphia-Dover, OH Micro Area",,,"New Philadelphia-Dover, OH",3935420
+35440,"Newport, OR Micro Area",,,"Newport, OR",4135440
+35460,"Newport, TN Micro Area",,,"Newport, TN",4735460
+35500,"Newton, IA Micro Area",,,"Newton, IA",1935500
+35580,"New Ulm, MN Micro Area",,,"New Ulm, MN",2735580
+35620,"New York-Newark-Jersey City, NY-NJ-PA Metro Area","New York, NY metro area","New York-Newark-Jersey City, NY-NJ-PA","New York-Newark-Jersey City, NY-NJ-PA",3435620
+35660,"Niles-Benton Harbor, MI Metro Area","Niles, MI metro area",,"Niles-Benton Harbor, MI",2635660
+35700,"Nogales, AZ Micro Area",,,"Nogales, AZ",0435700
+35740,"Norfolk, NE Micro Area",,,"Norfolk, NE",3135740
+35820,"North Platte, NE Micro Area",,,"North Platte, NE",3135820
+35840,"North Port-Sarasota-Bradenton, FL Metro Area","North Port, FL metro area","North Port-Sarasota-Bradenton, FL","North Port-Sarasota-Bradenton, FL",1235840
+35860,"North Vernon, IN Micro Area",,,"North Vernon, IN",1835860
+35900,"North Wilkesboro, NC Micro Area",,,"North Wilkesboro, NC",3735900
+35940,"Norwalk, OH Micro Area",,,"Norwalk, OH",3935940
+35980,"Norwich-New London, CT Metro Area","Norwich, CT metro area","Norwich-New London, CT","Norwich-New London, CT",0935980
+36020,"Oak Harbor, WA Micro Area",,,"Oak Harbor, WA",5336020
+36100,"Ocala, FL Metro Area",,"Ocala, FL","Ocala, FL",1236100
+36140,"Ocean City, NJ Metro Area","Ocean City, NJ metro area",,"Ocean City, NJ",3436140
+36220,"Odessa, TX Metro Area",,,"Odessa, TX",4836220
+36260,"Ogden-Clearfield, UT Metro Area","Ogden, UT metro area","Ogden-Clearfield, UT","Ogden-Clearfield, UT",4936260
+36300,"Ogdensburg-Massena, NY Micro Area",,,"Ogdensburg-Massena, NY",3636300
+36340,"Oil City, PA Micro Area",,,"Oil City, PA",4236340
+36380,"Okeechobee, FL Micro Area",,,"Okeechobee, FL",1236380
+36420,"Oklahoma City, OK Metro Area","Oklahoma City, OK metro area","Oklahoma City, OK","Oklahoma City, OK",4036420
+36460,"Olean, NY Micro Area",,,"Olean, NY",3636460
+36500,"Olympia-Tumwater, WA Metro Area","Olympia, WA metro area","Olympia-Tumwater, WA","Olympia-Tumwater, WA",5336500
+36540,"Omaha-Council Bluffs, NE-IA Metro Area","Omaha, NE metro area","Omaha-Council Bluffs, NE-IA","Omaha-Council Bluffs, NE-IA",1936540
+36580,"Oneonta, NY Micro Area",,,"Oneonta, NY",3636580
+36620,"Ontario, OR-ID Micro Area",,,"Ontario, OR-ID",1636620
+36660,"Opelousas, LA Micro Area",,,"Opelousas, LA",2236660
+36700,"Orangeburg, SC Micro Area",,,"Orangeburg, SC",4536700
+36740,"Orlando-Kissimmee-Sanford, FL Metro Area","Orlando, FL metro area","Orlando-Kissimmee-Sanford, FL","Orlando-Kissimmee-Sanford, FL",1236740
+36780,"Oshkosh-Neenah, WI Metro Area","Oshkosh, WI metro area","Oshkosh-Neenah, WI","Oshkosh-Neenah, WI",5536780
+36820,"Oskaloosa, IA Micro Area",,,"Oskaloosa, IA",1936820
+36830,"Othello, WA Micro Area",,,"Othello, WA",5336830
+36840,"Ottawa, KS Micro Area",,,"Ottawa, KS",2036840
+36860,"Ottawa-Peru, IL Micro Area",,,"Ottawa-Peru, IL",1736860
+36900,"Ottumwa, IA Micro Area",,,"Ottumwa, IA",1936900
+36940,"Owatonna, MN Micro Area",,,"Owatonna, MN",2736940
+36980,"Owensboro, KY Metro Area",,,"Owensboro, KY",2136980
+37020,"Owosso, MI Micro Area",,,"Owosso, MI",2637020
+37060,"Oxford, MS Micro Area",,,"Oxford, MS",2837060
+37080,"Oxford, NC Micro Area",,,"Oxford, NC",3737080
+37100,"Oxnard-Thousand Oaks-Ventura, CA Metro Area","Oxnard, CA metro area","Oxnard-Thousand Oaks-Ventura, CA","Oxnard-Thousand Oaks-Ventura, CA",0637100
+37120,"Ozark, AL Micro Area",,,"Ozark, AL",0137120
+37140,"Paducah, KY-IL Micro Area",,,"Paducah, KY-IL",1737140
+37220,"Pahrump, NV Micro Area",,,"Pahrump, NV",3237220
+37260,"Palatka, FL Micro Area",,,"Palatka, FL",1237260
+37300,"Palestine, TX Micro Area",,,"Palestine, TX",4837300
+37340,"Palm Bay-Melbourne-Titusville, FL Metro Area","Palm Bay, FL metro area","Palm Bay-Melbourne-Titusville, FL","Palm Bay-Melbourne-Titusville, FL",1237340
+37420,"Pampa, TX Micro Area",,,"Pampa, TX",4837420
+37460,"Panama City, FL Metro Area",,"Panama City, FL","Panama City, FL",1237460
+37500,"Paragould, AR Micro Area",,,"Paragould, AR",0537500
+37540,"Paris, TN Micro Area",,,"Paris, TN",4737540
+37580,"Paris, TX Micro Area",,,"Paris, TX",4837580
+37620,"Parkersburg-Vienna, WV Metro Area",,,"Parkersburg-Vienna, WV",5437620
+37660,"Parsons, KS Micro Area",,,"Parsons, KS",2037660
+37740,"Payson, AZ Micro Area",,,"Payson, AZ",0437740
+37780,"Pecos, TX Micro Area",,,"Pecos, TX",4837780
+37800,"Pella, IA Micro Area",,,,
+37860,"Pensacola-Ferry Pass-Brent, FL Metro Area",,"Pensacola-Ferry Pass-Brent, FL","Pensacola-Ferry Pass-Brent, FL",1237860
+37900,"Peoria, IL Metro Area",,"Peoria, IL","Peoria, IL",1737900
+37940,"Peru, IN Micro Area",,,"Peru, IN",1837940
+37980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD Metro Area","Philadelphia, PA metro area","Philadelphia-Camden-Wilmington, PA-NJ-DE-MD","Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",1037980
+38060,"Phoenix-Mesa-Scottsdale, AZ Metro Area","Phoenix, AZ metro area","Phoenix-Mesa-Scottsdale, AZ","Phoenix-Mesa-Scottsdale, AZ",0438060
+38100,"Picayune, MS Micro Area",,,"Picayune, MS",2838100
+38180,"Pierre, SD Micro Area",,,"Pierre, SD",4638180
+38220,"Pine Bluff, AR Metro Area","Pine Bluff, AR metro area",,"Pine Bluff, AR",0538220
+38240,"Pinehurst-Southern Pines, NC Micro Area",,,"Pinehurst-Southern Pines, NC",3738240
+38260,"Pittsburg, KS Micro Area",,,"Pittsburg, KS",2038260
+38300,"Pittsburgh, PA Metro Area","Pittsburgh, PA metro area","Pittsburgh, PA","Pittsburgh, PA",4238300
+38340,"Pittsfield, MA Metro Area",,,"Pittsfield, MA",2538340
+38380,"Plainview, TX Micro Area",,,"Plainview, TX",4838380
+38420,"Platteville, WI Micro Area",,,"Platteville, WI",5538420
+38460,"Plattsburgh, NY Micro Area",,,"Plattsburgh, NY",3638460
+38500,"Plymouth, IN Micro Area",,,"Plymouth, IN",1838500
+38540,"Pocatello, ID Metro Area",,,"Pocatello, ID",1638540
+38580,"Point Pleasant, WV-OH Micro Area",,,"Point Pleasant, WV-OH",3938580
+38620,"Ponca City, OK Micro Area",,,"Ponca City, OK",4038620
+38660,"Ponce, PR Metro Area",,,"Ponce, PR",7238660
+38700,"Pontiac, IL Micro Area",,,"Pontiac, IL",1738700
+38740,"Poplar Bluff, MO Micro Area",,,"Poplar Bluff, MO",2938740
+38780,"Portales, NM Micro Area",,,"Portales, NM",3538780
+38820,"Port Angeles, WA Micro Area",,,"Port Angeles, WA",5338820
+38840,"Port Clinton, OH Micro Area",,,"Port Clinton, OH",3938840
+38860,"Portland-South Portland, ME Metro Area","Portland, ME metro area","Portland-South Portland, ME","Portland-South Portland, ME",2338860
+38900,"Portland-Vancouver-Hillsboro, OR-WA Metro Area","Portland, OR metro area","Portland-Vancouver-Hillsboro, OR-WA","Portland-Vancouver-Hillsboro, OR-WA",4138900
+38920,"Port Lavaca, TX Micro Area",,,"Port Lavaca, TX",4838920
+38940,"Port St. Lucie, FL Metro Area","Port St. Lucie, FL metro area","Port St. Lucie, FL","Port St. Lucie, FL",1238940
+39020,"Portsmouth, OH Micro Area",,,"Portsmouth, OH",3939020
+39060,"Pottsville, PA Micro Area",,,"Pottsville, PA",4239060
+39140,"Prescott, AZ Metro Area",,"Prescott, AZ","Prescott, AZ",0439140
+39220,"Price, UT Micro Area",,,"Price, UT",4939220
+39260,"Prineville, OR Micro Area",,,"Prineville, OR",4139260
+39300,"Providence-Warwick, RI-MA Metro Area","Providence, RI metro area","Providence-Warwick, RI-MA","Providence-Warwick, RI-MA",2539300
+39340,"Provo-Orem, UT Metro Area","Provo, UT metro area","Provo-Orem, UT","Provo-Orem, UT",4939340
+39380,"Pueblo, CO Metro Area",,,"Pueblo, CO",0839380
+39420,"Pullman, WA Micro Area",,,"Pullman, WA",5339420
+39460,"Punta Gorda, FL Metro Area","Punta Gorda, FL metro area","Punta Gorda, FL","Punta Gorda, FL",1239460
+39500,"Quincy, IL-MO Micro Area",,,"Quincy, IL-MO",1739500
+39540,"Racine, WI Metro Area","Racine, WI metro area","Racine, WI","Racine, WI",5539540
+39580,"Raleigh, NC Metro Area","Raleigh, NC metro area","Raleigh, NC","Raleigh, NC",3739580
+39660,"Rapid City, SD Metro Area",,,"Rapid City, SD",4639660
+39700,"Raymondville, TX Micro Area",,,"Raymondville, TX",4839700
+39740,"Reading, PA Metro Area","Reading, PA metro area","Reading, PA","Reading, PA",4239740
+39780,"Red Bluff, CA Micro Area",,,"Red Bluff, CA",0639780
+39820,"Redding, CA Metro Area",,"Redding, CA","Redding, CA",0639820
+39860,"Red Wing, MN Micro Area",,,"Red Wing, MN",2739860
+39900,"Reno, NV Metro Area","Reno, NV metro area","Reno, NV","Reno, NV",3239900
+39940,"Rexburg, ID Micro Area",,,"Rexburg, ID",1639940
+39980,"Richmond, IN Micro Area",,,"Richmond, IN",1839980
+40060,"Richmond, VA Metro Area","Richmond, VA metro area","Richmond, VA","Richmond, VA",5140060
+40080,"Richmond-Berea, KY Micro Area",,,"Richmond-Berea, KY",2140080
+40100,"Rio Grande City, TX Micro Area",,,"Rio Grande City, TX",4840100
+40140,"Riverside-San Bernardino-Ontario, CA Metro Area","Riverside, CA metro area","Riverside-San Bernardino-Ontario, CA","Riverside-San Bernardino-Ontario, CA",0640140
+40180,"Riverton, WY Micro Area",,,"Riverton, WY",5640180
+40220,"Roanoke, VA Metro Area",,"Roanoke, VA","Roanoke, VA",5140220
+40260,"Roanoke Rapids, NC Micro Area",,,"Roanoke Rapids, NC",3740260
+40300,"Rochelle, IL Micro Area",,,"Rochelle, IL",1740300
+40340,"Rochester, MN Metro Area","Rochester, MN metro area","Rochester, MN","Rochester, MN",2740340
+40380,"Rochester, NY Metro Area","Rochester, NY metro area","Rochester, NY","Rochester, NY",3640380
+40420,"Rockford, IL Metro Area","Rockford, IL metro area","Rockford, IL","Rockford, IL",1740420
+40460,"Rockingham, NC Micro Area",,,"Rockingham, NC",3740460
+40540,"Rock Springs, WY Micro Area",,,"Rock Springs, WY",5640540
+40580,"Rocky Mount, NC Metro Area",,,"Rocky Mount, NC",3740580
+40620,"Rolla, MO Micro Area",,,"Rolla, MO",2940620
+40660,"Rome, GA Metro Area","Rome, GA metro area",,"Rome, GA",1340660
+40700,"Roseburg, OR Micro Area",,,"Roseburg, OR",4140700
+40740,"Roswell, NM Micro Area",,,"Roswell, NM",3540740
+40760,"Ruidoso, NM Micro Area",,,,
+40780,"Russellville, AR Micro Area",,,"Russellville, AR",0540780
+40820,"Ruston, LA Micro Area",,,"Ruston, LA",2240820
+40860,"Rutland, VT Micro Area",,,"Rutland, VT",5040860
+40900,"Sacramento--Roseville--Arden-Arcade, CA Metro Area","Sacramento, CA metro area","Sacramento--Roseville--Arden-Arcade, CA","Sacramento--Roseville--Arden-Arcade, CA",0640900
+40940,"Safford, AZ Micro Area",,,"Safford, AZ",0440940
+40980,"Saginaw, MI Metro Area","Saginaw, MI metro area","Saginaw, MI","Saginaw, MI",2640980
+41060,"St. Cloud, MN Metro Area","St. Cloud, MN metro area","St. Cloud, MN","St. Cloud, MN",2741060
+41100,"St. George, UT Metro Area",,,"St. George, UT",4941100
+41140,"St. Joseph, MO-KS Metro Area","St. Joseph, MO metro area",,"St. Joseph, MO-KS",2041140
+41180,"St. Louis, MO-IL Metro Area","St. Louis, MO metro area","St. Louis, MO-IL","St. Louis, MO-IL",1741180
+41220,"St. Marys, GA Micro Area",,,"St. Marys, GA",1341220
+41260,"St. Marys, PA Micro Area",,,,
+41400,"Salem, OH Micro Area",,,"Salem, OH",3941400
+41420,"Salem, OR Metro Area","Salem, OR metro area","Salem, OR","Salem, OR",4141420
+41460,"Salina, KS Micro Area",,,"Salina, KS",2041460
+41500,"Salinas, CA Metro Area","Salinas, CA metro area","Salinas, CA","Salinas, CA",0641500
+41540,"Salisbury, MD-DE Metro Area",,"Salisbury, MD-DE","Salisbury, MD-DE",1041540
+41620,"Salt Lake City, UT Metro Area","Salt Lake City, UT metro area","Salt Lake City, UT","Salt Lake City, UT",4941620
+41660,"San Angelo, TX Metro Area",,,"San Angelo, TX",4841660
+41700,"San Antonio-New Braunfels, TX Metro Area","San Antonio, TX metro area","San Antonio-New Braunfels, TX","San Antonio-New Braunfels, TX",4841700
+41740,"San Diego-Carlsbad, CA Metro Area","San Diego, CA metro area","San Diego-Carlsbad, CA","San Diego-Carlsbad, CA",0641740
+41760,"Sandpoint, ID Micro Area",,,"Sandpoint, ID",1641760
+41780,"Sandusky, OH Micro Area",,,"Sandusky, OH",3941780
+41820,"Sanford, NC Micro Area",,,"Sanford, NC",3741820
+41860,"San Francisco-Oakland-Hayward, CA Metro Area","San Francisco, CA metro area","San Francisco-Oakland-Hayward, CA","San Francisco-Oakland-Hayward, CA",0641860
+41900,"San Germ�n, PR Metro Area",,,"San Germán, PR",7241900
+41940,"San Jose-Sunnyvale-Santa Clara, CA Metro Area","San Jose, CA metro area","San Jose-Sunnyvale-Santa Clara, CA","San Jose-Sunnyvale-Santa Clara, CA",0641940
+41980,"San Juan-Carolina-Caguas, PR Metro Area",,,"San Juan-Carolina-Caguas, PR",7241980
+42020,"San Luis Obispo-Paso Robles-Arroyo Grande, CA Metro Area","San Luis Obispo, CA metro area","San Luis Obispo-Paso Robles-Arroyo Grande, CA","San Luis Obispo-Paso Robles-Arroyo Grande, CA",0642020
+42100,"Santa Cruz-Watsonville, CA Metro Area","Santa Cruz, CA metro area","Santa Cruz-Watsonville, CA","Santa Cruz-Watsonville, CA",0642100
+42140,"Santa Fe, NM Metro Area","Santa Fe, NM metro area",,"Santa Fe, NM",3542140
+42180,"Santa Isabel, PR Micro Area",,,"Santa Isabel, PR",7242180
+42200,"Santa Maria-Santa Barbara, CA Metro Area","Santa Maria, CA metro area","Santa Maria-Santa Barbara, CA","Santa Maria-Santa Barbara, CA",0642200
+42220,"Santa Rosa, CA Metro Area","Santa Rosa, CA metro area","Santa Rosa, CA","Santa Rosa, CA",0642220
+42300,"Sault Ste. Marie, MI Micro Area",,,"Sault Ste. Marie, MI",2642300
+42340,"Savannah, GA Metro Area","Savannah, GA metro area","Savannah, GA","Savannah, GA",1342340
+42380,"Sayre, PA Micro Area",,,"Sayre, PA",4242380
+42420,"Scottsbluff, NE Micro Area",,,"Scottsbluff, NE",3142420
+42460,"Scottsboro, AL Micro Area",,,"Scottsboro, AL",0142460
+42540,"Scranton--Wilkes-Barre--Hazleton, PA Metro Area",,"Scranton--Wilkes-Barre--Hazleton, PA","Scranton--Wilkes-Barre--Hazleton, PA",4242540
+42620,"Searcy, AR Micro Area",,,"Searcy, AR",0542620
+42660,"Seattle-Tacoma-Bellevue, WA Metro Area","Seattle, WA metro area","Seattle-Tacoma-Bellevue, WA","Seattle-Tacoma-Bellevue, WA",5342660
+42680,"Sebastian-Vero Beach, FL Metro Area","Sebastian, FL metro area",,"Sebastian-Vero Beach, FL",1242680
+42700,"Sebring, FL Metro Area",,,"Sebring, FL",1242700
+42740,"Sedalia, MO Micro Area",,,"Sedalia, MO",2942740
+42780,"Selinsgrove, PA Micro Area",,,"Selinsgrove, PA",4242780
+42820,"Selma, AL Micro Area",,,"Selma, AL",0142820
+42860,"Seneca, SC Micro Area",,,"Seneca, SC",4542860
+42900,"Seneca Falls, NY Micro Area",,,"Seneca Falls, NY",3642900
+42940,"Sevierville, TN Micro Area",,,"Sevierville, TN",4742940
+42980,"Seymour, IN Micro Area",,,"Seymour, IN",1842980
+43020,"Shawano, WI Micro Area",,,"Shawano, WI",5543020
+43060,"Shawnee, OK Micro Area",,,"Shawnee, OK",4043060
+43100,"Sheboygan, WI Metro Area","Sheboygan, WI metro area",,"Sheboygan, WI",5543100
+43140,"Shelby, NC Micro Area",,,"Shelby, NC",3743140
+43180,"Shelbyville, TN Micro Area",,,"Shelbyville, TN",4743180
+43220,"Shelton, WA Micro Area",,,"Shelton, WA",5343220
+43260,"Sheridan, WY Micro Area",,,"Sheridan, WY",5643260
+43300,"Sherman-Denison, TX Metro Area","Sherman, TX metro area",,"Sherman-Denison, TX",4843300
+43320,"Show Low, AZ Micro Area",,,"Show Low, AZ",0443320
+43340,"Shreveport-Bossier City, LA Metro Area",,"Shreveport-Bossier City, LA","Shreveport-Bossier City, LA",2243340
+43380,"Sidney, OH Micro Area",,,"Sidney, OH",3943380
+43420,"Sierra Vista-Douglas, AZ Metro Area",,,"Sierra Vista-Douglas, AZ",0443420
+43460,"Sikeston, MO Micro Area",,,"Sikeston, MO",2943460
+43500,"Silver City, NM Micro Area",,,"Silver City, NM",3543500
+43580,"Sioux City, IA-NE-SD Metro Area",,"Sioux City, IA-NE-SD","Sioux City, IA-NE-SD",1943580
+43620,"Sioux Falls, SD Metro Area",,"Sioux Falls, SD","Sioux Falls, SD",4643620
+43660,"Snyder, TX Micro Area",,,"Snyder, TX",4843660
+43700,"Somerset, KY Micro Area",,,"Somerset, KY",2143700
+43740,"Somerset, PA Micro Area",,,"Somerset, PA",4243740
+43760,"Sonora, CA Micro Area",,,"Sonora, CA",0643760
+43780,"South Bend-Mishawaka, IN-MI Metro Area","South Bend, IN metro area","South Bend-Mishawaka, IN-MI","South Bend-Mishawaka, IN-MI",1843780
+43900,"Spartanburg, SC Metro Area","Spartanburg, SC metro area","Spartanburg, SC","Spartanburg, SC",4543900
+43940,"Spearfish, SD Micro Area",,,"Spearfish, SD",4643940
+43980,"Spencer, IA Micro Area",,,"Spencer, IA",1943980
+44020,"Spirit Lake, IA Micro Area",,,"Spirit Lake, IA",1944020
+44060,"Spokane-Spokane Valley, WA Metro Area","Spokane, WA metro area","Spokane-Spokane Valley, WA","Spokane-Spokane Valley, WA",5344060
+44100,"Springfield, IL Metro Area",,"Springfield, IL","Springfield, IL",1744100
+44140,"Springfield, MA Metro Area",,"Springfield, MA","Springfield, MA",2544140
+44180,"Springfield, MO Metro Area",,"Springfield, MO","Springfield, MO",2944180
+44220,"Springfield, OH Metro Area",,,"Springfield, OH",3944220
+44260,"Starkville, MS Micro Area",,,"Starkville, MS",2844260
+44300,"State College, PA Metro Area",,,"State College, PA",4244300
+44340,"Statesboro, GA Micro Area",,,"Statesboro, GA",1344340
+44420,"Staunton-Waynesboro, VA Metro Area",,,"Staunton-Waynesboro, VA",5144420
+44460,"Steamboat Springs, CO Micro Area",,,"Steamboat Springs, CO",0844460
+44500,"Stephenville, TX Micro Area",,,"Stephenville, TX",4844500
+44540,"Sterling, CO Micro Area",,,"Sterling, CO",0844540
+44580,"Sterling, IL Micro Area",,,"Sterling, IL",1744580
+44620,"Stevens Point, WI Micro Area",,,"Stevens Point, WI",5544620
+44660,"Stillwater, OK Micro Area",,,"Stillwater, OK",4044660
+44700,"Stockton-Lodi, CA Metro Area","Stockton, CA metro area","Stockton-Lodi, CA","Stockton-Lodi, CA",0644700
+44740,"Storm Lake, IA Micro Area",,,"Storm Lake, IA",1944740
+44780,"Sturgis, MI Micro Area",,,"Sturgis, MI",2644780
+44860,"Sulphur Springs, TX Micro Area",,,"Sulphur Springs, TX",4844860
+44900,"Summerville, GA Micro Area",,,"Summerville, GA",1344900
+44920,"Summit Park, UT Micro Area",,,"Summit Park, UT",4944920
+44940,"Sumter, SC Metro Area",,,"Sumter, SC",4544940
+44980,"Sunbury, PA Micro Area",,,"Sunbury, PA",4244980
+45000,"Susanville, CA Micro Area",,,"Susanville, CA",0645000
+45020,"Sweetwater, TX Micro Area",,,"Sweetwater, TX",4845020
+45060,"Syracuse, NY Metro Area","Syracuse, NY metro area","Syracuse, NY","Syracuse, NY",3645060
+45140,"Tahlequah, OK Micro Area",,,"Tahlequah, OK",4045140
+45180,"Talladega-Sylacauga, AL Micro Area",,,"Talladega-Sylacauga, AL",0145180
+45220,"Tallahassee, FL Metro Area",,"Tallahassee, FL","Tallahassee, FL",1245220
+45300,"Tampa-St. Petersburg-Clearwater, FL Metro Area","Tampa, FL metro area","Tampa-St. Petersburg-Clearwater, FL","Tampa-St. Petersburg-Clearwater, FL",1245300
+45340,"Taos, NM Micro Area",,,"Taos, NM",3545340
+45380,"Taylorville, IL Micro Area",,,"Taylorville, IL",1745380
+45460,"Terre Haute, IN Metro Area",,"Terre Haute, IN","Terre Haute, IN",1845460
+45500,"Texarkana, TX-AR Metro Area",,,"Texarkana, TX-AR",0545500
+45520,"The Dalles, OR Micro Area",,,"The Dalles, OR",4145520
+45540,"The Villages, FL Metro Area","The Villages, FL metro area",,"The Villages, FL",1245540
+45580,"Thomaston, GA Micro Area",,,"Thomaston, GA",1345580
+45620,"Thomasville, GA Micro Area",,,"Thomasville, GA",1345620
+45660,"Tiffin, OH Micro Area",,,"Tiffin, OH",3945660
+45700,"Tifton, GA Micro Area",,,"Tifton, GA",1345700
+45740,"Toccoa, GA Micro Area",,,"Toccoa, GA",1345740
+45780,"Toledo, OH Metro Area",,"Toledo, OH","Toledo, OH",3945780
+45820,"Topeka, KS Metro Area",,"Topeka, KS","Topeka, KS",2045820
+45860,"Torrington, CT Micro Area",,"Torrington, CT","Torrington, CT",0945860
+45900,"Traverse City, MI Micro Area",,,"Traverse City, MI",2645900
+45940,"Trenton, NJ Metro Area","Trenton, NJ metro area","Trenton, NJ","Trenton, NJ",3445940
+45980,"Troy, AL Micro Area",,,"Troy, AL",0145980
+46020,"Truckee-Grass Valley, CA Micro Area",,,"Truckee-Grass Valley, CA",0646020
+46060,"Tucson, AZ Metro Area","Tucson, AZ metro area","Tucson, AZ","Tucson, AZ",0446060
+46100,"Tullahoma-Manchester, TN Micro Area",,,"Tullahoma-Manchester, TN",4746100
+46140,"Tulsa, OK Metro Area","Tulsa, OK metro area","Tulsa, OK","Tulsa, OK",4046140
+46180,"Tupelo, MS Micro Area",,,"Tupelo, MS",2846180
+46220,"Tuscaloosa, AL Metro Area",,"Tuscaloosa, AL","Tuscaloosa, AL",0146220
+46300,"Twin Falls, ID Metro Area",,,"Twin Falls, ID",1646300
+46340,"Tyler, TX Metro Area",,"Tyler, TX","Tyler, TX",4846340
+46380,"Ukiah, CA Micro Area",,,"Ukiah, CA",0646380
+46460,"Union City, TN-KY Micro Area",,,"Union City, TN-KY",2146460
+46500,"Urbana, OH Micro Area",,,"Urbana, OH",3946500
+46520,"Urban Honolulu, HI Metro Area","Urban Honolulu, HI metro area","Urban Honolulu, HI","Urban Honolulu, HI",1546520
+46540,"Utica-Rome, NY Metro Area",,"Utica-Rome, NY","Utica-Rome, NY",3646540
+46620,"Uvalde, TX Micro Area",,,"Uvalde, TX",4846620
+46660,"Valdosta, GA Metro Area",,,"Valdosta, GA",1346660
+46700,"Vallejo-Fairfield, CA Metro Area","Vallejo, CA metro area","Vallejo-Fairfield, CA","Vallejo-Fairfield, CA",0646700
+46740,"Valley, AL Micro Area",,,"Valley, AL",0146740
+46780,"Van Wert, OH Micro Area",,,"Van Wert, OH",3946780
+46820,"Vermillion, SD Micro Area",,,"Vermillion, SD",4646820
+46860,"Vernal, UT Micro Area",,,"Vernal, UT",4946860
+46900,"Vernon, TX Micro Area",,,"Vernon, TX",4846900
+46980,"Vicksburg, MS Micro Area",,,"Vicksburg, MS",2846980
+47020,"Victoria, TX Metro Area","Victoria, TX metro area",,"Victoria, TX",4847020
+47080,"Vidalia, GA Micro Area",,,"Vidalia, GA",1347080
+47180,"Vincennes, IN Micro Area",,,"Vincennes, IN",1847180
+47220,"Vineland-Bridgeton, NJ Metro Area","Vineland, NJ metro area",,"Vineland-Bridgeton, NJ",3447220
+47240,"Vineyard Haven, MA Micro Area",,,"Vineyard Haven, MA",2547240
+47260,"Virginia Beach-Norfolk-Newport News, VA-NC Metro Area","Virginia Beach, VA metro area","Virginia Beach-Norfolk-Newport News, VA-NC","Virginia Beach-Norfolk-Newport News, VA-NC",3747260
+47300,"Visalia-Porterville, CA Metro Area",,"Visalia-Porterville, CA","Visalia-Porterville, CA",0647300
+47340,"Wabash, IN Micro Area",,,"Wabash, IN",1847340
+47380,"Waco, TX Metro Area",,"Waco, TX","Waco, TX",4847380
+47420,"Wahpeton, ND-MN Micro Area",,,"Wahpeton, ND-MN",2747420
+47460,"Walla Walla, WA Metro Area",,,"Walla Walla, WA",5347460
+47540,"Wapakoneta, OH Micro Area",,,"Wapakoneta, OH",3947540
+47580,"Warner Robins, GA Metro Area",,"Warner Robins, GA","Warner Robins, GA",1347580
+47620,"Warren, PA Micro Area",,,"Warren, PA",4247620
+47660,"Warrensburg, MO Micro Area",,,"Warrensburg, MO",2947660
+47700,"Warsaw, IN Micro Area",,,"Warsaw, IN",1847700
+47780,"Washington, IN Micro Area",,,"Washington, IN",1847780
+47820,"Washington, NC Micro Area",,,"Washington, NC",3747820
+47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV Metro Area","Washington, DC metro area","Washington-Arlington-Alexandria, DC-VA-MD-WV","Washington-Arlington-Alexandria, DC-VA-MD-WV",1147900
+47920,"Washington Court House, OH Micro Area",,,"Washington Court House, OH",3947920
+47940,"Waterloo-Cedar Falls, IA Metro Area",,"Waterloo-Cedar Falls, IA","Waterloo-Cedar Falls, IA",1947940
+47980,"Watertown, SD Micro Area",,,"Watertown, SD",4647980
+48020,"Watertown-Fort Atkinson, WI Micro Area",,,"Watertown-Fort Atkinson, WI",5548020
+48060,"Watertown-Fort Drum, NY Metro Area",,,"Watertown-Fort Drum, NY",3648060
+48100,"Wauchula, FL Micro Area",,,"Wauchula, FL",1248100
+48140,"Wausau, WI Metro Area","Wausau, WI metro area",,"Wausau, WI",5548140
+48180,"Waycross, GA Micro Area",,,"Waycross, GA",1348180
+48220,"Weatherford, OK Micro Area",,,"Weatherford, OK",4048220
+48260,"Weirton-Steubenville, WV-OH Metro Area",,,"Weirton-Steubenville, WV-OH",3948260
+48300,"Wenatchee, WA Metro Area","Wenatchee, WA metro area",,"Wenatchee, WA",5348300
+48460,"West Plains, MO Micro Area",,,"West Plains, MO",2948460
+48500,"West Point, MS Micro Area",,,,
+48540,"Wheeling, WV-OH Metro Area",,,"Wheeling, WV-OH",3948540
+48580,"Whitewater-Elkhorn, WI Micro Area",,,"Whitewater-Elkhorn, WI",5548580
+48620,"Wichita, KS Metro Area",,"Wichita, KS","Wichita, KS",2048620
+48660,"Wichita Falls, TX Metro Area",,,"Wichita Falls, TX",4848660
+48700,"Williamsport, PA Metro Area",,,"Williamsport, PA",4248700
+48780,"Williston, ND Micro Area",,,"Williston, ND",3848780
+48820,"Willmar, MN Micro Area",,,"Willmar, MN",2748820
+48900,"Wilmington, NC Metro Area",,"Wilmington, NC","Wilmington, NC",3748900
+48940,"Wilmington, OH Micro Area",,,"Wilmington, OH",3948940
+48980,"Wilson, NC Micro Area",,,"Wilson, NC",3748980
+49020,"Winchester, VA-WV Metro Area","Winchester, VA metro area",,"Winchester, VA-WV",5149020
+49080,"Winnemucca, NV Micro Area",,,"Winnemucca, NV",3249080
+49100,"Winona, MN Micro Area",,,"Winona, MN",2749100
+49180,"Winston-Salem, NC Metro Area","Winston-Salem, NC metro area","Winston-Salem, NC","Winston-Salem, NC",3749180
+49220,"Wisconsin Rapids-Marshfield, WI Micro Area",,,"Wisconsin Rapids-Marshfield, WI",5549220
+49260,"Woodward, OK Micro Area",,,"Woodward, OK",4049260
+49300,"Wooster, OH Micro Area",,,"Wooster, OH",3949300
+49340,"Worcester, MA-CT Metro Area","Worcester, MA metro area","Worcester, MA-CT","Worcester, MA-CT",0949340
+49380,"Worthington, MN Micro Area",,,"Worthington, MN",2749380
+49420,"Yakima, WA Metro Area",,"Yakima, WA","Yakima, WA",5349420
+49460,"Yankton, SD Micro Area",,,"Yankton, SD",4649460
+49620,"York-Hanover, PA Metro Area","York, PA metro area","York-Hanover, PA","York-Hanover, PA",4249620
+49660,"Youngstown-Warren-Boardman, OH-PA Metro Area","Youngstown, OH metro area","Youngstown-Warren-Boardman, OH-PA","Youngstown-Warren-Boardman, OH-PA",3949660
+49700,"Yuba City, CA Metro Area",,"Yuba City, CA","Yuba City, CA",0649700
+49740,"Yuma, AZ Metro Area",,"Yuma, AZ","Yuma, AZ",0449740
+49780,"Zanesville, OH Micro Area",,,"Zanesville, OH",3949780
+49820,"Zapata, TX Micro Area",,,"Zapata, TX",4849820
+99999,Combined with Los Angeles,"Anaheim, CA metro area",,,
+99999,Combined with Philadelphia,"Camden, NJ metro area",,,
+99999,Combined with Chicago,"Elgin, IL metro area",,,
+99999,Combined with Miami,"Fort Lauderdale, FL metro area",,,
+99999,Combined with Dallas,"Fort Worth, TX metro area",,,
+99999,,"Frederick, MD metro area",,,
+99999,Combined with San Francisco,"Oakland, CA metro area",,,
+99999,Combined with Seattle,"Tacoma, WA metro area",,,
+99999,Combined with Detroit,"Warren, MI metro area",,,
