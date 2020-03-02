@@ -62,7 +62,7 @@ def clean_apartment_list_data(input_data, crosswalk_data):
     return cleaned_input_data
 
 
-def generate_permitting_table(year_date, cert_filepath):
+def HOLD_generate_permitting_table(year_date, cert_filepath):
     """
     Cleans permitting data from the Census Building Permits Survey. Joins multiple
     years together (using the year_date list) to allow for longitudinal analysis.
@@ -139,14 +139,18 @@ def generate_permitting_table(year_date, cert_filepath):
         "structures_with_five_plus",
     ]
 
+    # Format year and set to datetime for analysis
     permits_df["year"] = year_date[:4]
+    permits_df["dates"] = pd.to_datetime(
+        "12-31-" + permits_df["year"], infer_datetime_format=True
+    )
 
     cleaned_df = msa_df.merge(permits_df, left_index=True, right_index=True)
 
     return cleaned_df
 
 
-def format_bls_cbsa_codes(filepath):
+def HOLD_format_bls_cbsa_codes(filepath):
     """
     The BLS has an API for "State and Area Employment, Hours, and Earnings."
     To query this API, one needs the numerical State & CBSA codes concatenated.
@@ -186,7 +190,7 @@ def format_bls_cbsa_codes(filepath):
     return formatted_crosswalk_df
 
 
-def bls_employee_headcount_by_msa(series_id_list, start_year, end_year):
+def HOLD_bls_employee_headcount_by_msa(series_id_list, start_year, end_year):
     """
     Function for one query to the BLS website. The focus is on the survey, "State
     and Area Employment, Hours, and Earnings," and all employees across all industries.
@@ -241,7 +245,7 @@ def bls_employee_headcount_by_msa(series_id_list, start_year, end_year):
     return joined_bls_output
 
 
-def format_bls_employment_data(input_data, crosswalk_data):
+def HOLD_format_bls_employment_data(input_data, crosswalk_data):
     """
     Takes output from BLS query (func "bls_employee_headcount_by_msa"), adds MSA IDs,
     and formats the values for analysis.
@@ -254,13 +258,17 @@ def format_bls_employment_data(input_data, crosswalk_data):
     """
 
     # Take BLS Series IDs and pull out the State & CBSA code
-    def trim_for_cbsa(x):
+    def trim_for_state_cbsa(x):
         return x[3:10]
+
+    def trim_for_cbsa(x):
+        return x[5:10]
 
     # Strip series_name column for state & CBSA codes
     input_data["MSA_STATE_ID"] = input_data["series_name"].apply(
-        lambda x: trim_for_cbsa(x)
+        lambda x: trim_for_state_cbsa(x)
     )
+    input_data["MSA_ID"] = input_data["series_name"].apply(lambda x: trim_for_cbsa(x))
 
     # Rename columns, set types, set employment to thousands
     input_data.rename(columns={"value": "employment"}, inplace=True)
@@ -272,4 +280,50 @@ def format_bls_employment_data(input_data, crosswalk_data):
         crosswalk_data[["MSA_STATE_ID", "NAME_2018"]], on="MSA_STATE_ID"
     )
 
+    # Format columns 'periodName' and 'year' to datetime
+    cleaned_df["dates"] = pd.to_datetime(
+        cleaned_df["periodName"] + "-" + cleaned_df["year"].astype("str"),
+        infer_datetime_format=True,
+    )
+
     return cleaned_df
+
+
+def HOLD_create_job_shortage_ratio(permitting_input, bls_input):
+    """
+    XXX
+    """
+
+    # Generate pivots of both data
+    cleaned_permitting_output_pivot = permitting_input.pivot(
+        index="dates", columns="MSA_ID", values="total"
+    )
+    cleaned_bls_output_pivot = bls_input.pivot(
+        index="dates", columns="MSA_ID", values="employment"
+    )
+
+    permit_list = list(cleaned_permitting_output_pivot.columns)
+    bls_list = list(cleaned_bls_output_pivot.columns)
+
+    final_list = list(set(permit_list) | set(bls_list))
+    tmp_df = pd.DataFrame(data=None, index=final_list)
+    final_df = pd.DataFrame(data=None, index=final_list)
+
+    timeframe_list = ["3Y", "2Y", "1Y"]
+    for period in timeframe_list:
+        permitting_series = pd.Series(
+            cleaned_permitting_output_pivot.last(period).sum(), name=period + "_permits"
+        )
+        growth_series = pd.Series(
+            cleaned_bls_output_pivot.last(period).iloc[-1]
+            - cleaned_bls_output_pivot.last(period).iloc[0],
+            name=period + "_growth",
+        )
+        tmp_df = tmp_df.join([growth_series, permitting_series])
+
+    for period in timeframe_list:
+        final_df[period + "_ratio"] = (
+            tmp_df[period + "_growth"] / tmp_df[period + "_permits"]
+        )
+
+    return final_df

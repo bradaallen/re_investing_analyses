@@ -1,6 +1,6 @@
 import pandas as pd
 import re
-
+from fuzzywuzzy import process
 
 
 def cagr(input_data, end, begin, timing="year", operation="column", prepend=""):
@@ -56,3 +56,12 @@ def pct2float(x):
     """
     x = str(x)
     return float(x.strip("%")) / 100
+
+
+def get_match(cbsa_data, zillow_list):
+    """
+    Used in an apply function to match Zillow data to Census CBSA data.
+    """
+    best_match = process.extractOne(cbsa_data, zillow_list)
+
+    return best_match[0]

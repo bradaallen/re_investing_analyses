@@ -61,7 +61,7 @@ def format_zillow_for_ptr_ratio(input_data, new_column_name):
     return output_data
 
 
-def generate_price_to_rent_ratios(raw_price_data, raw_rent_data):
+def generate_price_to_rent_ratios(raw_price_data, raw_rent_data, crosswalk_data):
     """
     Calculates PTR data for different MSAs using Zillow data
     https://www.zillow.com/research/data/
@@ -69,7 +69,7 @@ def generate_price_to_rent_ratios(raw_price_data, raw_rent_data):
     Args:
         raw_price_data (pd.DataFrame): Raw Zillow price data as a df
         raw_rent_data (pd.DataFrame): Raw Zillow rent data as a df
-
+        crosswalk_data (pd.DataFrame): Joins MSA_ID to Zillow rent data
     Returns:
         ptr_ratio_df (pd.DataFrame)
     """
@@ -98,5 +98,10 @@ def generate_price_to_rent_ratios(raw_price_data, raw_rent_data):
     ptr_ratio_df = ptr_ratio_df.join(
         indexed_prices_df.set_index(join_keys), on=join_keys
     ).join(indexed_rents_df.set_index(join_keys), on=join_keys)
+
+    ptr_ratio_df.rename(columns={"RegionID": "ZILLOW_ID"}, inplace=True)
+    ptr_ratio_df = ptr_ratio_df.merge(
+        crosswalk_data[["ZILLOW_ID", "MSA_ID"]], on="ZILLOW_ID", how="left"
+    )
 
     return ptr_ratio_df
