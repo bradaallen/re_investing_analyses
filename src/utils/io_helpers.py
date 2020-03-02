@@ -55,8 +55,13 @@ def import_spreadsheet_data(TOKEN, CREDENTIALS):
 
 def curl_census_link(link, cert_filepath):
     """
-    XXX
+    Function for accessing and curling Census data
 
+    Args:
+        link (URL): site for scraping data
+        cert_filepath (str): issued certificate by site; have encountered errors in past with stale certs
+    Returns:
+        get_body.decode("utf8") (str) Body of website text - for Census, is a .txt file
     """
 
     b_obj = BytesIO()
