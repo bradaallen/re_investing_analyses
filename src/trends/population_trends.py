@@ -2,7 +2,7 @@ import requests
 import json
 import pandas as pd
 import numpy as np
-from src.utils.helpers import cagr
+from src.utils.math_and_type_helpers import cagr
 
 
 def generate_acs_employment_data(industry_dict, survey_year):

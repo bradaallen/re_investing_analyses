@@ -81,6 +81,9 @@ target/
 profile_default/
 ipython_config.py
 
+# Data
+*.csv
+
 # pyenv
 .python-version
 
