@@ -85,19 +85,19 @@ def add_monthly_sales(redfin_data, title):
     """
 
     # Get list of MSAs for analysis and initialize field to populate
-    msa_list = list(redfin_data.region.unique())
+    msa_list = list(redfin_data.MSA_ID.unique())
     redfin_data[title] = 0
 
     # Sales inferred by looking at the delta between this and next month's inventory,
     # plus new listings for the current month
     for item in msa_list:
         next_month_inventory = redfin_data.loc[
-            redfin_data.region == item, "inventory"
+            redfin_data.MSA_ID == item, "inventory"
         ].shift(periods=-1)
-        redfin_data.loc[redfin_data.region == item, title] = (
-            redfin_data.loc[redfin_data.region == item, "inventory"]
+        redfin_data.loc[redfin_data.MSA_ID == item, title] = (
+            redfin_data.loc[redfin_data.MSA_ID == item, "inventory"]
             - next_month_inventory
-            + redfin_data.loc[redfin_data.region == item, "new_listings"]
+            + redfin_data.loc[redfin_data.MSA_ID == item, "new_listings"]
         )
 
     monthly_sales_series = redfin_data[title]
@@ -106,7 +106,7 @@ def add_monthly_sales(redfin_data, title):
 
 
 def create_indexed_prices(
-    input_data, period_index_column, region_column, price_column, new_column_name
+    input_data, period_index_column, MSA_ID_column, price_column, new_column_name
 ):
     """
     Indexes Redfin monthly price data to first price in dataset (Feb 1, 2012).
@@ -114,7 +114,7 @@ def create_indexed_prices(
     Args:
         input_data (pd.DataFrame): Cleaned and formatted Redfin data
         period_index_column (str): Column with datetime - for indexing
-        region_column (str): Index is on a per-MSA basis, this specifies the
+        MSA_ID_column (str): Index is on a per-MSA basis, this specifies the
         location for that data
         price_column (str): Column with prices to be indexed
         new_column_name (str): Column title to use in updated df
@@ -124,7 +124,7 @@ def create_indexed_prices(
 
     # Pivot data to allow for easy indexing
     pivot_for_indexing = input_data.pivot(
-        index=period_index_column, columns=region_column, values=price_column
+        index=period_index_column, columns=MSA_ID_column, values=price_column
     )
 
     # Indexes data to first date in series by MSA (Feb 2012).
@@ -141,7 +141,7 @@ def create_indexed_prices(
 def add_rolling_window(
     input_data,
     period_index_column,
-    region_column,
+    MSA_ID_column,
     rolling_column,
     window_period,
     new_column_name,
@@ -152,7 +152,7 @@ def add_rolling_window(
     Args:
         input_data (pd.DataFrame): Cleaned and formatted Redfin data
         period_index_column (str): Column with datetime - for indexing
-        region_column (str): Index is on a per-MSA basis, this specifies the
+        MSA_ID_column (str): Index is on a per-MSA basis, this specifies the
         location for that data
         rolling_column (str): Column with values to be imputed on a rolling basis
         window_period (int): Length of window period to use (based on period)
@@ -163,7 +163,7 @@ def add_rolling_window(
 
     # Pivot data to allow for easy indexing
     pivot_for_indexing = input_data.pivot(
-        index=period_index_column, columns=region_column, values=rolling_column
+        index=period_index_column, columns=MSA_ID_column, values=rolling_column
     )
 
     # Performs rolling window calculation by MSA
@@ -177,7 +177,9 @@ def add_rolling_window(
     return rolling_column
 
 
-def create_balanced_and_seller_summary(prepped_redfin_data, market_threshold):
+def create_balanced_and_seller_summary(
+    prepped_redfin_data, crosswalk_data, market_threshold
+):
     """
     Calculate CAGR and length of "buyers" and "sellers markets", based on a
     defined "market threshold" - rolling months of inventory
@@ -189,7 +191,7 @@ def create_balanced_and_seller_summary(prepped_redfin_data, market_threshold):
     """
 
     # Initialize MSA list and final dataframe
-    msa_list = list(prepped_redfin_data.region.unique())
+    msa_list = list(prepped_redfin_data.MSA_ID.unique())
     summary_df = pd.DataFrame(
         data=None,
         index=msa_list,
@@ -207,7 +209,7 @@ def create_balanced_and_seller_summary(prepped_redfin_data, market_threshold):
     # calculate CAGRs for balanced and sellers markets
     for item in msa_list:
         tmp_df = prepped_redfin_data.loc[
-            (prepped_redfin_data.region == item)
+            (prepped_redfin_data.MSA_ID == item)
             & (prepped_redfin_data.rolling_isp.notnull()),
         ]
         flag_series = tmp_df["rolling_moi"] > market_threshold
@@ -215,6 +217,7 @@ def create_balanced_and_seller_summary(prepped_redfin_data, market_threshold):
         # Some markets are only sellers markets (all periods below the threshold)
         # This condition will skip calculating for balanced markets if that is
         # the case.
+
         if flag_series.sum() > 0:
             # Only sums values when a sellers market is flagged. Therefore, the
             # value that shows up most frequently is the longest balanced market.
@@ -281,6 +284,14 @@ def create_balanced_and_seller_summary(prepped_redfin_data, market_threshold):
                 # Length
                 summary_df.loc[item, "sellers_max_length"] = sellers_market_month
 
+    crosswalk_data["MSA_ID"] = crosswalk_data["MSA_ID"].astype("int").astype("str")
+    summary_df = summary_df.merge(
+        crosswalk_data[["MSA_ID", "NAME_2018"]],
+        left_index=True,
+        right_on="MSA_ID",
+        how="left",
+    )
+
     return summary_df
 
 
@@ -331,7 +342,7 @@ def preliminary_market_type(existing_summary_data, dom=60, moi=4):
     return condition
 
 
-def create_dom_and_market_cycle_summary(prepped_redfin_data):
+def create_dom_and_market_cycle_summary(prepped_redfin_data, crosswalk_data):
     """
     Summary data on market and DOM trends over last 1, 3, 6 months.
 
@@ -344,13 +355,13 @@ def create_dom_and_market_cycle_summary(prepped_redfin_data):
     # Initialize table for summary
     dmc_summary_df = pd.DataFrame(
         data=None,
-        index=prepped_redfin_data.region.unique(),
+        index=prepped_redfin_data.MSA_ID.unique(),
         columns=["1m_dom", "3m_dom", "6m_dom", "last_6m_moi", "market_type"],
     )
 
-    for item in prepped_redfin_data.region.unique():
+    for item in prepped_redfin_data.MSA_ID.unique():
         dom_series = prepped_redfin_data.loc[
-            prepped_redfin_data.region == item,
+            prepped_redfin_data.MSA_ID == item,
             ["month_of_period_end", "days_on_market"],
         ].set_index("month_of_period_end")
 
@@ -363,11 +374,13 @@ def create_dom_and_market_cycle_summary(prepped_redfin_data):
             dmc_summary_df.loc[item, "3m_dom"] = result.trend.dropna().last("3M").mean()
             dmc_summary_df.loc[item, "6m_dom"] = result.trend.dropna().last("6M").mean()
             dmc_summary_df.loc[item, "last_6m_moi"] = prepped_redfin_data.loc[
-                prepped_redfin_data.region == item, "rolling_moi"
+                prepped_redfin_data.MSA_ID == item, "rolling_moi"
             ][-2:-1].values[0]
 
         except ValueError:
-            print(f"The series for {item} has challenges with inferring a trendline.")
+            print(
+                f"The series for MSA_ID: {item} has challenges with inferring a trendline."
+            )
             continue
 
     # Use DOM calculations above to infer overall market characteristics
@@ -376,5 +389,13 @@ def create_dom_and_market_cycle_summary(prepped_redfin_data):
         dmc_summary_df.loc[row[0:2].name, "market_type"] = preliminary_market_type(
             row[0:5]
         )
+
+    crosswalk_data["MSA_ID"] = crosswalk_data["MSA_ID"].astype("int").astype("str")
+    dmc_summary_df = dmc_summary_df.merge(
+        crosswalk_data[["MSA_ID", "NAME_2018"]],
+        left_index=True,
+        right_on="MSA_ID",
+        how="left",
+    )
 
     return dmc_summary_df

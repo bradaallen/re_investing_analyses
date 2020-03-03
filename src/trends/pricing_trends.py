@@ -105,3 +105,69 @@ def generate_price_to_rent_ratios(raw_price_data, raw_rent_data, crosswalk_data)
     )
 
     return ptr_ratio_df
+
+
+def trulia_ptr_categories(input, moderate_threshold=16, high_threshold=21):
+    """
+    Defines whether markets are buyers or renters markets based on Trulia's
+    price to rent ratio guidelines:
+        * 1 to 15 indicates it is much better to buy than rent
+        * 16 to 20 indicates it is typically better to rent than buy
+        * 21 or more indicates it is much better to rent than buy
+
+    Args:
+        input (int or str): PTR ratio calculated from Zillow data
+        moderate_threshold (int; default: 16): Trulia threshold defined above
+        high_threshold (int; default: 21): Trulia threshold defined above
+    Returns:
+        result (str): Classification on purchase quality
+    """
+
+    if input < moderate_threshold:
+        result = "Good to buy"
+    elif (input >= moderate_threshold) & (input < high_threshold):
+        result = "Moderate investment"
+    elif input > high_threshold:
+        result = "Good to rent"
+    else:
+        result = "Error"
+    return result
+
+
+def price_to_rent_categories(input_data):
+    """
+    Pulls most recent PTR ratio from Zillow data and classifies it per Trulia.
+
+    Args:
+        input_data (pd.DataFrame): PTR ratio calculated from Zillow data
+    Returns:
+        output_data (pd.DataFrame): Recent classification data, price, and PTR ratio
+    """
+
+    # Initialize dataframe and reset input data to do timeseries analysis
+    msa_list = list(input_data.MSA_ID.dropna().unique())
+    input_data = input_data.set_index("dates")
+
+    output_data = pd.DataFrame(
+        data=None, index=msa_list, columns=["current_ratio", "current_zillow_price"]
+    )
+
+    # Pull most recent PTR ratio and price data
+    for item in msa_list:
+        output_data.loc[item, "current_ratio"] = (
+            input_data.loc[input_data.MSA_ID == item, "ratio"].last("1M").values[0]
+        )
+        output_data.loc[item, "current_zillow_price"] = (
+            input_data.loc[input_data.MSA_ID == item, "prices"].last("1M").values[0]
+        )
+
+    # Set type and classify data
+    output_data["current_ratio"] = output_data["current_ratio"].astype("float")
+    output_data["rating"] = output_data["current_ratio"].apply(
+        lambda x: trulia_ptr_categories(x)
+    )
+
+    # Ensure MSA_ID is a string (to join elsewhere)
+    output_data.index = output_data.index.astype("int").astype("str")
+
+    return output_data

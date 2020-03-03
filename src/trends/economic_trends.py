@@ -8,6 +8,31 @@ from src.utils.math_and_type_helpers import pct2float, string2float
 from src.utils.io_helpers import curl_census_link
 
 
+def housing_shortage_categories(input, moderate_threshold=1.5, high_threshold=2.5):
+    """
+    Defines whether markets are buyers or renters markets based on CityLab and
+    Apartment List's Rentonomics general guidelines: 2 jobs for every new 1 unit.
+
+    Args:
+        input (int or str): PTR ratio calculated from Zillow data
+        moderate_threshold (int; default: 1.5): Below is risk of oversupply
+        high_threshold (int; default: 2.5): Risk of undersupply
+    Returns:
+        result (str): Classification on purchase quality
+    """
+
+    if input < moderate_threshold:
+        result = "Risk of Oversupply"
+    elif (input >= moderate_threshold) & (input < high_threshold):
+        result = "Balanced Market"
+    elif input > high_threshold:
+        result = "Risk of Undersupply"
+    else:
+        result = "Error"
+
+    return result
+
+
 def clean_apartment_list_data(input_data, crosswalk_data):
     """
     Cleans permit-to-job growth data aggregated by Apartment List - link can be found
@@ -58,6 +83,10 @@ def clean_apartment_list_data(input_data, crosswalk_data):
         .astype("str")
     )
     cleaned_input_data = input_data.join(tmp_crosswalk, on="location")
+
+    cleaned_input_data["shortage_categories"] = cleaned_input_data[
+        "jobs_per_permit_(2008-2018)"
+    ].apply(lambda x: housing_shortage_categories(x))
 
     return cleaned_input_data
 
