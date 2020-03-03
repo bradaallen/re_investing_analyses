@@ -1,11 +1,13 @@
 import re
+import os
 import requests
 import json
 import pandas as pd
 import numpy as np
 from io import StringIO
+from box import Box
 from src.utils.math_and_type_helpers import pct2float, string2float
-from src.utils.io_helpers import curl_census_link
+from src.utils.io_helpers import curl_census_link, import_spreadsheet_data
 
 
 def housing_shortage_categories(input, moderate_threshold=1.5, high_threshold=2.5):
@@ -356,3 +358,35 @@ def HOLD_create_job_shortage_ratio(permitting_input, bls_input):
         )
 
     return final_df
+
+
+def generate_shortage_output(env_path, google_params=Box, shortage_params=Box):
+    """
+    Takes output from BLS query (func "bls_employee_headcount_by_msa"), adds MSA IDs,
+    and formats the values for analysis.
+
+    Args:
+        env_path (pd.DataFrame): path to where Google's credentials.json and token.pickle are stored
+        google_params (Box config): filename and paths for Google Sheets variables
+        shortage_params (Box config): filename and path for crosswalk data
+    Returns:
+        clean_df: Summary DF of housing shortage analysis
+    """
+
+    # Load spreadsheet and crosswalk data
+    df = import_spreadsheet_data(
+        env_path,
+        google_params.TOKEN,
+        google_params.CREDENTIALS,
+        google_params.SCOPES,
+        google_params.SPREADSHEET_ID,
+        google_params.RANGE_NAME,
+    )
+
+    crosswalk_df = pd.read_csv(
+        os.path.join(shortage_params.data_home, shortage_params.crosswalk)
+    )
+
+    clean_df = clean_apartment_list_data(df, crosswalk_df)
+
+    return clean_df

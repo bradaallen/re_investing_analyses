@@ -2,6 +2,7 @@ import requests
 import json
 import pandas as pd
 import numpy as np
+from box import Box
 from src.utils.math_and_type_helpers import cagr
 
 
@@ -294,3 +295,71 @@ def add_industry_delta_and_cagr_features(data, industry_dict, start_year, end_ye
         )
 
     return data
+
+
+def generate_economic_output(bea_key, params=Box):
+    """
+    Generate output and summary of ACS and BEA data. Different markers of economic heath:
+    education, mobility, economic growth, by industry.
+
+    Args:
+        bea_key (str, environment variable): API key from BEA
+        params (Box, config): Config variables
+    Returns:
+        filtered_df (pd.DataFrame): Dataframe with summary of economic performance
+        in the recent past for different MSAs
+     """
+
+    detailed_df = generate_acs_employment_data(
+        params.industry_dict, params.base_years.end_year
+    ).join(
+        generate_acs_employment_data(
+            params.industry_dict, params.base_years.start_year
+        ),
+        lsuffix="_" + str(params.base_years.end_year),
+        rsuffix="_" + str(params.base_years.start_year),
+    )
+
+    detailed_df = add_industry_delta_and_cagr_features(
+        detailed_df,
+        params.industry_dict,
+        params.base_years.start_year,
+        params.base_years.end_year,
+    )
+
+    detailed_df = (
+        detailed_df.join(
+            add_gdp_cagr_feature(
+                params.base_years.start_year, params.base_years.end_year, bea_key
+            ),
+            rsuffix="_gdp",
+        )
+        .join(
+            add_wage_cagr_feature(
+                params.wage_years.start_year, params.wage_years.end_year, bea_key
+            ),
+            rsuffix="_wage",
+        )
+        .join(add_population_feature(params.input_year))
+        .join(add_attainment_feature(params.input_year))
+        .join(add_mobility_feature(params.input_year))
+    )
+
+    filtered_cols = [
+        "NAME_2018",
+        "total_workforce_cagr",
+        "gdp_growth_cagr",
+        "wage_growth_cagr",
+        "deg_count",
+        "total_move",
+        "pop",
+    ]
+    filtered_df = detailed_df.loc[
+        detailed_df["gdp_growth_cagr"].notnull(), filtered_cols
+    ]
+
+    filtered_df["volatile_economy"] = detailed_df[params.neg_list].sum(axis=1)
+    filtered_df["pct_educated"] = filtered_df["deg_count"] / filtered_df["pop"]
+    filtered_df["pct_educated_moved"] = filtered_df["total_move"] / filtered_df["pop"]
+
+    return filtered_df

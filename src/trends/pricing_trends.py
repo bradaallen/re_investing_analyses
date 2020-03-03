@@ -1,7 +1,9 @@
 import requests
 import csv
-from io import StringIO
+import os
 import pandas as pd
+from io import StringIO
+from box import Box
 from src.trends.housing_trends import create_indexed_prices
 
 
@@ -171,3 +173,32 @@ def price_to_rent_categories(input_data):
     output_data.index = output_data.index.astype("int").astype("str")
 
     return output_data
+
+
+def generate_pricing_output(crosswalk_home, crosswalk_name, params=Box):
+    """
+    Generates two dataframes for price-to-rent analysis.
+
+    Args:
+        crosswalk_home (filepath, str): Path to CSV data stored for analysis
+        crosswalk_name (filename, str): Filename of crosswalk for analysis
+        params (Box): Config parameters for analysis
+    Returns:
+        ptr_df (pd.DataFrame): detailed price to rent ratios by MSA, and chartable
+        final_ptr_output_df (pd.DataFrame): classification of PTR ratios on quality of
+        buying vs. renting
+    """
+
+    # Load and format crosswalk data
+    crosswalk_df = pd.read_csv(os.path.join(crosswalk_home, crosswalk_name))
+    crosswalk_df["ZILLOW_ID"] = (
+        crosswalk_df["ZILLOW_ID"].fillna(0).astype("int").astype("str")
+    )
+
+    # Reshape price and rent data, create price-to-rent ratios and categories
+    price_df = create_zillow_dataframe(params.endpoint_price)
+    rent_df = create_zillow_dataframe(params.endpoint_rents)
+    ptr_df = generate_price_to_rent_ratios(price_df, rent_df, crosswalk_df)
+    final_ptr_output_df = price_to_rent_categories(ptr_df)
+
+    return ptr_df, final_ptr_output_df

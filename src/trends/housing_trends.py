@@ -1,4 +1,6 @@
+import os
 import pandas as pd
+from box import Box
 from statsmodels.tsa.seasonal import seasonal_decompose
 from src.utils.math_and_type_helpers import cagr, pct2float, string2float
 
@@ -399,3 +401,68 @@ def create_dom_and_market_cycle_summary(prepped_redfin_data, crosswalk_data):
     )
 
     return dmc_summary_df
+
+
+def generate_housing_output(params=Box):
+    """
+    2 DataFrames providing information on market classifications, summaries, and DOM trends.
+
+    Args:
+        params (Box config): Cleaned and formatted Redfin data
+    Returns:
+        bss_df (pd.DataFrame): Summary of balanced and seller market classification and length
+        dom_df (pd.DataFrame): Days-of-market analysis and classification of current market quality
+    """
+
+    # Load Redfin and crosswalk data
+    redfin_df = pd.read_csv(os.path.join(params.data_home, params.redfin_data))
+    crosswalk_df = pd.read_csv(os.path.join(params.data_home, params.crosswalk))
+
+    # Clean Redfin data; add sales and months of inventory
+    redfin_df = clean_redfin_data(redfin_df, crosswalk_df)
+    redfin_df["sales"] = add_monthly_sales(redfin_df, "sales")
+    redfin_df["months_of_inventory"] = redfin_df["inventory"] / redfin_df["sales"]
+
+    redfin_df = redfin_df.merge(
+        create_indexed_prices(
+            redfin_df,
+            "month_of_period_end",
+            "region",
+            "median_sale_price",
+            new_column_name="indexed_sale_price",
+        ),
+        how="left",
+        on=["month_of_period_end", "region"],
+    )
+
+    redfin_df = redfin_df.merge(
+        add_rolling_window(
+            redfin_df,
+            "month_of_period_end",
+            "region",
+            "months_of_inventory",
+            window_period=9,
+            new_column_name="rolling_moi",
+        ),
+        how="left",
+        on=["month_of_period_end", "region"],
+    ).merge(
+        add_rolling_window(
+            redfin_df,
+            "month_of_period_end",
+            "region",
+            "indexed_sale_price",
+            window_period=6,
+            new_column_name="rolling_isp",
+        ),
+        how="left",
+        on=["month_of_period_end", "region"],
+    )
+
+    # Generate summary output
+    bss_df = create_balanced_and_seller_summary(
+        redfin_df, crosswalk_df, market_threshold=4
+    )
+    dom_df = create_dom_and_market_cycle_summary(redfin_df, crosswalk_df)
+
+    return bss_df, dom_df
