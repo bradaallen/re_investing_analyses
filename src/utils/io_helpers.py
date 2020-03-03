@@ -13,7 +13,9 @@ import yaml
 DEFAULT_HOME = "C:\\Users\\allen brad\\Desktop\\re_investing\\re_investing_analyses"
 
 
-def import_spreadsheet_data(TOKEN, CREDENTIALS, SCOPES, SPREADSHEET_ID, RANGE_NAME):
+def import_spreadsheet_data(
+    secrets_path, TOKEN, CREDENTIALS, SCOPES, SPREADSHEET_ID, RANGE_NAME
+):
     """
     Imports spreadsheet data for analysis and consumption. Requires credentials for Google API
     (stored in credentials.json with the file, SPREADSHEET_ID, RANGE_NAME, and SCOPE
@@ -24,12 +26,16 @@ def import_spreadsheet_data(TOKEN, CREDENTIALS, SCOPES, SPREADSHEET_ID, RANGE_NA
     Returns:
         values_df (pd.DataFrame)
     """
+
+    TOKEN_PATH = os.path.join(secrets_path, TOKEN)
+    CREDENTIALS_PATH = os.path.join(secrets_path, CREDENTIALS)
+
     creds = None
     # The file token.pickle stores the user's access and refresh tokens, and is
     # created automatically when the authorization flow completes for the first
     # time.
-    if os.path.exists(TOKEN):
-        with open(TOKEN, "rb") as token:
+    if os.path.exists(TOKEN_PATH):
+        with open(TOKEN_PATH, "rb") as token:
             creds = pickle.load(token)
     # If there are no (valid) credentials available, let the user log in.
     if not creds or not creds.valid:
@@ -37,11 +43,11 @@ def import_spreadsheet_data(TOKEN, CREDENTIALS, SCOPES, SPREADSHEET_ID, RANGE_NA
             creds.refresh(google.auth.transport.requests.Request())
         else:
             flow = google_auth_oauthlib.flow.InstalledAppFlow.from_client_secrets_file(
-                CREDENTIALS, SCOPES
+                CREDENTIALS_PATH, SCOPES
             )
             creds = flow.run_local_server(port=0)
         # Save the credentials for the next run
-        with open(TOKEN, "wb") as token:
+        with open(TOKEN_PATH, "wb") as token:
             pickle.dump(creds, token)
 
     service = googleapiclient.discovery.build("sheets", "v4", credentials=creds)
