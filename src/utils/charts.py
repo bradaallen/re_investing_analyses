@@ -2,7 +2,7 @@ import re
 import math
 import pandas as pd
 import matplotlib.pyplot as plt
-from src.trends.population_trends import generate_acs_employment_data
+from src.trends.economic_trends import generate_acs_employment_data
 
 
 def view_economic_makeup(industry_dict, year, plt_list):

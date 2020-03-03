@@ -1,0 +1,71 @@
+filepaths:
+  data_home: 'C:\Users\allen brad\Desktop\re_investing\saved_data\'
+  crosswalk: 'updated_crosswalk.csv'
+  redfin_data: '200221_redfin_msa_data.csv'
+  secrets_path: 'C:\Users\allen brad\Desktop\re_investing\src\env\'
+
+secrets:
+  cert_file: 'cacert.pem'
+
+population_trends:
+  industry_dict: {'C24050_002E': 'agriculture',
+                   'C24050_003E': 'construction',
+                   'C24050_004E': 'manufacturing',
+                   'C24050_005E': 'wholesale_trade',
+                   'C24050_006E': 'retail_trade',
+                   'C24050_007E': 'transportation_warehousing_and_utilities',
+                   'C24050_008E': 'information',
+                   'C24050_009E': 'finance_and_real_estate',
+                   'C24050_010E': 'tourism_services', # tourism!!
+                   'C24050_011E': 'educational_services_and_health_care',
+                   'C24050_012E': 'arts_and_entertainment',
+                   'C24050_013E': 'other_services_ex_public_administration',
+                   'C24050_014E': 'public_administration',
+                   'C24050_015E': 'management_business_science'}
+  base_years:
+    start_year: 2013
+    end_year: 2018
+  wage_years:
+    start_year: 2013
+    end_year: 2017
+  input_year: '2018'
+  neg_list: ['construction_2018', 'tourism_services_2018', 'arts_and_entertainment_2018']
+
+housing_trends:
+  redfin_filepath: 'saved_data\\200221_redfin_msa_data.csv'
+
+pricing_trends:
+  endpoint_price: 'http://files.zillowstatic.com/research/public/Metro/Metro_Zhvi_AllHomes.csv'
+  endpoint_rents: 'http://files.zillowstatic.com/research/public/Metro/Metro_Zri_AllHomesPlusMultifamily.csv'
+  google_spreadsheets: # If modifying these scopes, delete the file token.pickle.
+    SPREADSHEET_ID: "1vxquw-T72QQ6oZn8VaL0_9UPzHFip-0CdNn1dirL83I"  # pulled from Apartment List (get link)
+    RANGE_NAME: "Sheet1!A1:K1544"
+    SCOPES: ["https://www.googleapis.com/auth/spreadsheets.readonly"]
+    TOKEN: 'token.pickle' #located in secrets_path
+    CREDENTIALS: 'credentials.json' #located in secrets_path
+
+economic_trends:
+  cached_data_filepath: 'saved_data\\bls_data_saved.csv'
+  bls_query_width: 50
+  bls_start_year: 2016
+  bls_end_year: 2019
+
+overall_market_rubric:
+  population_trends_dict: {'gdp_growth_cagr': ['gdp_growth_flag', 1.5],
+                           'total_workforce_cagr': ['pop_flag', 0.5],
+                           'wage_growth_cagr': ['wage_growth_flag', 1],
+                           'pct_educated': ['deg_flag', 1],
+                           'volatile_economy': ['volatile_flag', -0.5]}
+  price_rent_ratio_dict: {'Good to buy': 1.5,
+                          'Moderate investment': 1,
+                          'Good to rent': 0.5,
+                          None: 0}
+  market_classification_dict: {'Peak': -1,
+                               'Contraction': -2,
+                               'Trough': 1.5,
+                               'Expanding': 1,
+                               None: 0}
+  housing_shortage_dict: {'Risk of Oversupply': -1,
+                          'Balanced Market': 0,
+                          'Risk of Undersupply': 0.5,
+                          'Error': 0}

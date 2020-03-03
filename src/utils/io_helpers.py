@@ -6,10 +6,14 @@ import googleapiclient.discovery
 import google_auth_oauthlib.flow
 import google.auth.transport.requests
 from io import BytesIO
-from src.constants import SPREADSHEET_ID, RANGE_NAME, SCOPES
+from box import Box
+import os
+import yaml
+
+DEFAULT_HOME = "C:\\Users\\allen brad\\Desktop\\re_investing\\re_investing_analyses"
 
 
-def import_spreadsheet_data(TOKEN, CREDENTIALS):
+def import_spreadsheet_data(TOKEN, CREDENTIALS, SCOPES, SPREADSHEET_ID, RANGE_NAME):
     """
     Imports spreadsheet data for analysis and consumption. Requires credentials for Google API
     (stored in credentials.json with the file, SPREADSHEET_ID, RANGE_NAME, and SCOPE
@@ -85,3 +89,23 @@ def curl_census_link(link, cert_filepath):
 
     # Decode the bytes stored in get_body to HTML
     return get_body.decode("utf8")
+
+
+def load_config(config: str = None,):
+    """
+    Loads config.yaml with model training and prediction parameters.
+
+    Args:
+        config: path to config
+
+    Returns:
+        Box of config parameters
+    """
+    assert config is not None, "no config file path found"
+
+    if os.path.exists(config):
+        yaml_config = open(config, "r")
+    else:
+        raise FileNotFoundError(f"No YAML config at {config}")
+
+    return Box(yaml.safe_load(yaml_config))
