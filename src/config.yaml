@@ -1,8 +1,8 @@
 filepaths:
-  data_home: 'C:\Users\allen brad\Desktop\re_investing\saved_data\'
+  data_home: 'C:\Users\lapanm\frameworks\re_investing_analyses\saved_data\'
   crosswalk: 'updated_crosswalk.csv'
   redfin_data: '200221_redfin_msa_data.csv'
-  secrets_path: 'C:\Users\allen brad\Desktop\re_investing\re_investing_analyses\env\'
+  secrets_path: 'C:\Users\lapanm\frameworks\re_investing_analyses\env\'
 
 secrets:
   cert_file: 'cacert.pem'

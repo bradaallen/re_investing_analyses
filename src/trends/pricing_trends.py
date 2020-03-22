@@ -4,7 +4,7 @@ import os
 import pandas as pd
 from io import StringIO
 from box import Box
-from src.trends.housing_trends import create_indexed_prices
+from ..trends.housing_trends import create_indexed_prices
 
 
 def create_zillow_dataframe(endpoint):

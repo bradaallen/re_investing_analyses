@@ -3,7 +3,7 @@ import json
 import pandas as pd
 import numpy as np
 from box import Box
-from src.utils.math_and_type_helpers import cagr
+from ..utils.math_and_type_helpers import cagr
 
 
 def generate_acs_employment_data(industry_dict, survey_year):

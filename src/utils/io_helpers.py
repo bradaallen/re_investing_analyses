@@ -10,7 +10,7 @@ from box import Box
 import os
 import yaml
 
-DEFAULT_HOME = "C:\\Users\\allen brad\\Desktop\\re_investing\\re_investing_analyses"
+DEFAULT_HOME = "C:\\Users\\lapanm\\frameworks\\re_investing_analyses"
 
 
 def import_spreadsheet_data(

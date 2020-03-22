@@ -2,7 +2,7 @@ import os
 import pandas as pd
 from box import Box
 from statsmodels.tsa.seasonal import seasonal_decompose
-from src.utils.math_and_type_helpers import cagr, pct2float, string2float
+from ..utils.math_and_type_helpers import cagr, pct2float, string2float
 
 
 def clean_redfin_data(redfin_data, crosswalk_data):
@@ -370,7 +370,7 @@ def create_dom_and_market_cycle_summary(prepped_redfin_data, crosswalk_data):
         # Strip seasonality from data using 'seasonal_compose', use  resulting trend for
         # inferring DOM over several time periods.
         try:
-            result = seasonal_decompose(dom_series, model="additive", freq=12)
+            result = seasonal_decompose(dom_series, model="additive", period=12)
 
             dmc_summary_df.loc[item, "1m_dom"] = result.trend.dropna().last("1M").mean()
             dmc_summary_df.loc[item, "3m_dom"] = result.trend.dropna().last("3M").mean()

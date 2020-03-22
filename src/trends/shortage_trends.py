@@ -6,8 +6,8 @@ import pandas as pd
 import numpy as np
 from io import StringIO
 from box import Box
-from src.utils.math_and_type_helpers import pct2float, string2float
-from src.utils.io_helpers import curl_census_link, import_spreadsheet_data
+from ..utils.math_and_type_helpers import pct2float, string2float
+from ..utils.io_helpers import curl_census_link, import_spreadsheet_data
 
 
 def housing_shortage_categories(input, moderate_threshold=1.5, high_threshold=2.5):
