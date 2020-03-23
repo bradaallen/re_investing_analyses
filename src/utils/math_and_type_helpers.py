@@ -45,7 +45,12 @@ def string2float(x):
     x = re.sub(",", "", x)
 
     if "$" in x:
-        x = x.strip("$|K")
+        x = x.strip("$")
+    if "K" in x:
+        x = x.strip("K")
+        x = float(x) * 1000
+    elif "k" in x:
+        x = x.strip("k")
         x = float(x) * 1000
     return float(x)
 
