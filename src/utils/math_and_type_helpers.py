@@ -60,6 +60,7 @@ def pct2float(x):
     Converts string percentages to floats for analysis.
     """
     x = str(x)
+    x = re.sub(",", "", x)
     return float(x.strip("%")) / 100
 
 
