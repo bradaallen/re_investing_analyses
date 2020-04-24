@@ -362,4 +362,4 @@ def generate_economic_output(bea_key, params=Box):
     filtered_df["pct_educated"] = filtered_df["deg_count"] / filtered_df["pop"]
     filtered_df["pct_educated_moved"] = filtered_df["total_move"] / filtered_df["pop"]
 
-    return filtered_df
+    return detailed_df, filtered_df

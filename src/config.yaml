@@ -1,8 +1,8 @@
 filepaths:
-  data_home: 'C:\Users\allen brad\Desktop\re_investing\saved_data\'
+  data_home: 'C:\Users\brada\projects\re_investing\saved_data\'
   crosswalk: 'updated_crosswalk.csv'
   redfin_data: '200221_redfin_msa_data.csv'
-  secrets_path: 'C:\Users\allen brad\Desktop\re_investing\re_investing_analyses\env\'
+  secrets_path: 'C:\Users\brada\projects\re_investing\re_investing_analyses\env\'
 
 secrets:
   cert_file: 'cacert.pem'
@@ -35,8 +35,8 @@ housing_trends:
   redfin_filepath: 'saved_data\\200221_redfin_msa_data.csv'
 
 pricing_trends:
-  endpoint_price: 'http://files.zillowstatic.com/research/public/Metro/Metro_Zhvi_AllHomes.csv'
   endpoint_rents: 'http://files.zillowstatic.com/research/public/Metro/Metro_Zri_AllHomesPlusMultifamily.csv'
+  endpoint_price: 'http://files.zillowstatic.com/research/public/Metro/Metro_Zhvi_AllHomes.csv'
   google_spreadsheets: # If modifying these scopes, delete the file token.pickle.
     SPREADSHEET_ID: "1vxquw-T72QQ6oZn8VaL0_9UPzHFip-0CdNn1dirL83I"  # pulled from Apartment List (get link)
     RANGE_NAME: "Sheet1!A1:K1544"
