@@ -1,6 +1,7 @@
 import requests
 import csv
 import os
+import numpy as np
 import pandas as pd
 from io import StringIO
 from box import Box
@@ -29,14 +30,15 @@ def create_zillow_dataframe(endpoint):
 
     # Convert to DataFrame and process numeric data
     zillow_df = pd.DataFrame(data)
-    numeric_columns = zillow_df.columns[3:]
+    # TODO: Brittle convention, Zillow added 2 new columns since first written that broke this type setting
+    numeric_columns = zillow_df.columns[5:]
     for col in numeric_columns:
         zillow_df[col] = pd.to_numeric(zillow_df[col])
 
     return zillow_df
 
 
-def format_zillow_for_ptr_ratio(input_data, new_column_name):
+def format_zillow_for_ptr_ratio(input_data, new_column_name, offset_date=False):
     """
     Reshapes raw Zillow data to allow for price and rent data to be joined.
 
@@ -52,13 +54,23 @@ def format_zillow_for_ptr_ratio(input_data, new_column_name):
     input_data.columns.name = "dates"
     output_data = (
         input_data.set_index(["RegionID", "RegionName"])
-        .drop(["SizeRank"], axis=1)
+        # TODO: This is brittle. Zillow added the 2 latter columns and broke my code.
+        # TODO: Only one table has RegionType and StateName - the 'ignore' is a hack.
+        .drop(["SizeRank", "RegionType", "StateName"], axis=1, errors="ignore")
         .stack()
         .rename(new_column_name)
         .to_frame()
         .reset_index()
     )
+
+    output_data[new_column_name] = (
+        output_data[new_column_name].replace("", np.nan).astype("float64")
+    )
+
     output_data["dates"] = pd.to_datetime(output_data["dates"])
+
+    if offset_date:
+        output_data["dates"] = output_data["dates"] + pd.offsets.MonthBegin(1)
 
     return output_data
 
@@ -77,7 +89,9 @@ def generate_price_to_rent_ratios(raw_price_data, raw_rent_data, crosswalk_data)
     """
 
     # Reshape input data to allow for join
-    price_pivot_df = format_zillow_for_ptr_ratio(raw_price_data, "prices")
+    price_pivot_df = format_zillow_for_ptr_ratio(
+        raw_price_data, "prices", offset_date=True
+    )
     rent_pivot_df = format_zillow_for_ptr_ratio(raw_rent_data, "rents")
 
     # Divide values by one another to get the price-to-rent ratio. Rent data is in months.
@@ -85,8 +99,8 @@ def generate_price_to_rent_ratios(raw_price_data, raw_rent_data, crosswalk_data)
     ptr_ratio_df = price_pivot_df.join(
         rent_pivot_df.set_index(join_keys), how="inner", on=join_keys
     )
-    ptr_ratio_df["ratio"] = ptr_ratio_df["prices"] / (ptr_ratio_df["rents"] * 12)
 
+    ptr_ratio_df["ratio"] = ptr_ratio_df["prices"] / (ptr_ratio_df["rents"] * 12)
     # Index data to allow for easy comparison of growths
     indexed_prices_df = create_indexed_prices(
         ptr_ratio_df, "dates", "RegionName", "prices", "indexed_prices"

@@ -465,4 +465,4 @@ def generate_housing_output(params=Box):
     )
     dom_df = create_dom_and_market_cycle_summary(redfin_df, crosswalk_df)
 
-    return bss_df, dom_df
+    return redfin_df, bss_df, dom_df

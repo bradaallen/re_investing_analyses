@@ -26,7 +26,7 @@ def main(TopN=50):
     load_dotenv(dotenv_path=cfg.filepaths.secrets_path + ".env")
 
     # 1. Generate base table with detailed economic data (from ACS)
-    economic_df = generate_economic_output(
+    detailed_df, economic_df = generate_economic_output(
         os.getenv("BEA_KEY"), params=cfg.population_trends
     )
 
