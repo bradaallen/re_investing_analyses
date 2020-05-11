@@ -18,9 +18,9 @@ def cagr(input_data, end, begin, timing="year", operation="column", prepend=""):
         cagr (float)
     """
 
-    if (end - begin) < 0:
+    if (end - begin) <= 0:
         raise ValueError(
-            "The end period precedes the start period. Check order of inputs."
+            "The start period must precede the end period. Check order of inputs."
         )
 
     timeframe = ((end - begin) / 12) if timing == "month" else (end - begin)

@@ -1,9 +1,12 @@
 from ...src.utils.math_and_type_helpers import cagr, string2float, pct2float, get_match
+import pytest
 
 
 class TestCagr:
-    def test_simple(self):
-        pass
+    def test_value_error(self):
+        input_data = 0
+        with pytest.raises(ValueError):
+            cagr(input_data, 0, 1)
 
 
 class TestString2Float:
